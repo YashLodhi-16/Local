@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\New folder"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"code-runner.runInTerminal": true,
+		"code-runner.saveFileBeforeRun": true
+	}
+}
