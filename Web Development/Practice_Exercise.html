@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The first sample website</title>
+    <style>
+        .container {
+            border: 1px rgb(237, 183, 183) solid;
+            background-color: black;
+            color: white;
+            border-radius: 100px;
+        }
+
+        .list a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .list a:hover {
+            color: rgb(188, 116, 255);
+        }
+
+        ul.mylist {
+            display: flex;
+        }
+
+        .list {
+            margin-right: 50px;
+            font-size: 20px;
+        }
+
+        #search_bar {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: bolder;
+            display: flex;
+            width: 150px;
+            margin-left: 750px;
+            margin-top: -40px;
+            border-radius: 12px;
+            padding-left: 13px;
+            padding-bottom: 2px;
+            color: rgb(188, 116, 255);
+        }
+
+        .button1 {
+            margin-left: 910px;
+            margin-top: -40px;
+            width: 57px;
+            height: 23px;
+            border-radius: 12px;
+        }
+
+        .button1:hover {
+            color: rgb(188, 116, 255);
+
+        }
+
+        p.heading1 {
+            margin-left: 479px;
+            margin-top: -45px;
+            border: 2px solid gray;
+            width: 139px;
+            font-size: 29px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            margin-bottom: 12px;
+         border-radius: 30px;
+        }
+        p.heading1:hover{
+            color: rgb(188, 116, 255);;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="mylist">
+                <li class="list" id="list1"><a href="#">Home</a></li>
+                <li class="list" id="list2"><a href="#">About us</a></li>
+                <li class="list" id="list3"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <form action="yash.js">
+            <input type="text" name="search" id="search_bar" placeholder="search everthing">
+        </form>
+        <button class="button1" type="submit">search</button>
+        <p class="heading1">*SAMPLE*</p>
+    </div>
+</body>
+
+</html>
+<!-- /* padding-right:10px ; */ -->
+<!-- /* #list1{
+   margin-right: 50px;
+}
+#list2{
+   margin-right: 50px;
+}
+#list3{
+   margin-right: 50px;
+} */ -->
