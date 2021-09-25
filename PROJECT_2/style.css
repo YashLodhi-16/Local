@@ -1,0 +1,304 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(242, 242, 242, 0.753);
+}
+
+:root {
+    --bg-color: rgb(187, 187, 187);
+    --rang-color: white;
+    --section2containerbg-color:rgb(234 229 229 / 81%);
+}
+
+#logo {
+    width: 56px;
+    /* height: 10%; */
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 8px 10px;
+    cursor: pointer;
+}
+
+#navbar {
+
+    display: flex;
+    background-color: var(--bg-color);
+    width: 100%;
+    position: fixed;
+}
+
+#ullist {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.link {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: var(--rang-color);
+    outline: none;
+}
+
+.link:hover {
+    color: black;
+}
+
+#searchbtn {
+    align-self: center;
+    margin-left: auto;
+    padding: 0px 30px;
+}
+
+#searchbar {
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 50px;
+    padding: 0px 30px;
+    width: 74%;
+    margin-right: 10px;
+    outline: none;
+    background-color: var(--bg-color);
+}
+
+#searchbar::placeholder {
+    color: var(--rang-color);
+}
+
+#searchbar:hover::placeholder {
+    color: black;
+}
+
+#btn {
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 50px;
+    padding: 0px 10px;
+    outline: none;
+    color: var(--rang-color);
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: black;
+}
+
+#section1::before {
+    content: "";
+    background: url("../PROJECT_2/img/background.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 64%;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+
+#bosscontainer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+}
+
+.container-1 {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    width:100%;
+    height:fit-content;
+    margin: 20px 20px;
+    background-color:var(--section2containerbg-color);
+}
+
+.section2para{
+    padding:3% 5%;
+}
+
+.section2heading{
+    padding:2% 0%;
+}
+
+.section2logo{
+    width:45%;
+}
+
+.container-2 {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    width:100%;
+    height:fit-content;
+    margin: 20px 20px;
+    background-color:var(--section2containerbg-color);
+}
+
+#card2{
+    width: 56%;
+}
+
+.section2para{
+    padding:3% 5%;
+}
+
+.section2heading{
+    padding:3% 0%;
+}
+
+
+
+.container-3 {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    width:100%;
+    height:fit-content;
+    margin: 20px 20px;
+    background-color:var(--section2containerbg-color);
+}
+
+.section2para{
+    padding:3% 5%;
+}
+
+.section2heading{
+    padding:3% 0%;
+}
+
+
+#sec2-heading {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0px;
+}
+
+#section3::before{
+    content: "";
+    background: url("../PROJECT_2/img/client.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#section3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border:2px solid black;
+}
+
+#headingfor3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.clients{
+    width:20%;
+    padding: 0% 3%;
+}
+
+.clients-logo{
+    width:100%;
+    height: 24%;
+    border:1px solid black;
+    border-radius:15px;
+    cursor: pointer;
+}
+
+#section4::before{
+    content: "";
+    background: url("../PROJECT_2/img/contact.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#form{
+    display: flex;
+    height:90%;
+    align-items: center;
+}
+
+#forminput{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.contactform{
+    outline:none;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding:1% 2%;
+    margin: 1% 0%;
+    background-color:var(--bg-color) ;
+}
+
+#btn2{
+    width: 10%;
+    color: white;
+    cursor: pointer;
+}
+
+.contactform::placeholder{
+    color: white;
+}
+
+.contactform:hover::placeholder{
+    color: black;
+}
+
+#btn2:hover{
+    color: black;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: white;
+    background-color: var(--bg-color);
+    padding: 5px 0%;
+}
+
+#footer:hover{
+    color:black
+}
