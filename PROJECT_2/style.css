@@ -3,14 +3,39 @@
     padding: 0px;
 }
 
-body{
+body {
     background-color: rgba(242, 242, 242, 0.753);
 }
 
 :root {
     --bg-color: rgb(187, 187, 187);
     --rang-color: white;
-    --section2containerbg-color:rgb(234 229 229 / 81%);
+    --section2containerbg-color: rgb(234 229 229 / 81%);
+}
+
+#toggle {
+    display: none;
+    visibility: hidden;
+}
+
+#navheading {
+    display: none;
+    align-self: center;
+}
+
+#navheadingh2 {
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    /* width: 11%; */
+}
+
+#expand {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
 }
 
 #logo {
@@ -23,14 +48,14 @@ body{
 }
 
 #navbar {
-
+    border: 1px solid black;
     display: flex;
     background-color: var(--bg-color);
     width: 100%;
     position: fixed;
 }
 
-#ullist {
+.ullist {
     display: flex;
     align-items: center;
 }
@@ -78,6 +103,10 @@ body{
     color: black;
 }
 
+#searchbutton{
+    display: inline;
+}
+
 #btn {
     border: 1px solid black;
     border-radius: 15px;
@@ -95,7 +124,7 @@ body{
 
 #section1::before {
     content: "";
-    background: url("../PROJECT_2/img/background.jpg") no-repeat center center/cover;
+    background: url("img/background.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -130,64 +159,62 @@ body{
     border: 1px solid black;
     text-align: center;
     border-radius: 15px;
-    width:100%;
-    height:fit-content;
+    width: 100%;
+    height: fit-content;
     margin: 20px 20px;
-    background-color:var(--section2containerbg-color);
+    background-color: var(--section2containerbg-color);
 }
 
-.section2para{
-    padding:3% 5%;
+.section2para {
+    padding: 3% 5%;
 }
 
-.section2heading{
-    padding:2% 0%;
+.section2heading {
+    padding: 2% 0%;
 }
 
-.section2logo{
-    width:45%;
+.section2logo {
+    width: 45%;
 }
 
 .container-2 {
     border: 1px solid black;
     text-align: center;
     border-radius: 15px;
-    width:100%;
-    height:fit-content;
+    width: 100%;
+    height: fit-content;
     margin: 20px 20px;
-    background-color:var(--section2containerbg-color);
+    background-color: var(--section2containerbg-color);
 }
 
-#card2{
+#card2 {
     width: 56%;
 }
 
-.section2para{
-    padding:3% 5%;
+.section2para {
+    padding: 3% 5%;
 }
 
-.section2heading{
-    padding:3% 0%;
+.section2heading {
+    padding: 3% 0%;
 }
-
-
 
 .container-3 {
     border: 1px solid black;
     text-align: center;
     border-radius: 15px;
-    width:100%;
-    height:fit-content;
+    width: 100%;
+    height: fit-content;
     margin: 20px 20px;
-    background-color:var(--section2containerbg-color);
+    background-color: var(--section2containerbg-color);
 }
 
-.section2para{
-    padding:3% 5%;
+.section2para {
+    padding: 3% 5%;
 }
 
-.section2heading{
-    padding:3% 0%;
+.section2heading {
+    padding: 3% 0%;
 }
 
 
@@ -197,9 +224,9 @@ body{
     padding: 3% 0px;
 }
 
-#section3::before{
+#section3::before {
     content: "";
-    background: url("../PROJECT_2/img/client.jpg") no-repeat center center/cover;
+    background: url("img/client.jpg") no-repeat center center/cover;
     position: absolute;
     width: 100%;
     height: 90%;
@@ -207,17 +234,17 @@ body{
     opacity: 0.7;
 }
 
-#section3{
+#section3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 90%;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border:2px solid black;
+    border: 2px solid black;
 }
 
-#headingfor3{
+#headingfor3 {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -225,22 +252,22 @@ body{
     font-size: 1.2rem;
 }
 
-.clients{
-    width:20%;
+.clients {
+    width: 20%;
     padding: 0% 3%;
 }
 
-.clients-logo{
-    width:100%;
+.clients-logo {
+    width: 100%;
     height: 24%;
-    border:1px solid black;
-    border-radius:15px;
+    border: 1px solid black;
+    border-radius: 15px;
     cursor: pointer;
 }
 
-#section4::before{
+#section4::before {
     content: "";
-    background: url("../PROJECT_2/img/contact.jpg") no-repeat center center/cover;
+    background: url("img/contact.jpg") no-repeat center center/cover;
     position: absolute;
     width: 100%;
     height: 90%;
@@ -249,47 +276,47 @@ body{
 
 }
 
-#form{
+#form {
     display: flex;
-    height:90%;
+    height: 90%;
     align-items: center;
 }
 
-#forminput{
+#forminput {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 90%;
     margin: auto;
 }
 
-.contactform{
-    outline:none;
+.contactform {
+    outline: none;
     border: 1px solid black;
     border-radius: 15px;
-    padding:1% 2%;
+    padding: 1% 2%;
     margin: 1% 0%;
-    background-color:var(--bg-color) ;
+    background-color: var(--bg-color);
 }
 
-#btn2{
+#btn2 {
     width: 10%;
     color: white;
     cursor: pointer;
 }
 
-.contactform::placeholder{
+.contactform::placeholder {
     color: white;
 }
 
-.contactform:hover::placeholder{
+.contactform:hover::placeholder {
     color: black;
 }
 
-#btn2:hover{
+#btn2:hover {
     color: black;
 }
 
-#footer{
+#footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,6 +326,1454 @@ body{
     padding: 5px 0%;
 }
 
-#footer:hover{
-    color:black
+#footer:hover {
+    color: black
 }
+
+
+
+  /*-----lowest_screen_resolution-----*/
+@media only screen  and (max-width:239px) {
+    #navbar {
+        flex-direction: column;
+    }
+  
+    #toggle:checked~#expand {
+        height: 190px;
+    }
+  
+    #toggle:checked~label::before {
+        content: "-";
+    }
+    
+    #boss {
+        display: block;
+    }
+  
+    #navheading {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #navheadingh2 {
+        font-size: 0.8rem;
+        text-align: center;
+        padding:0px 5px;
+    }
+  
+    #container{
+        display: flex;
+        justify-content: center;
+    }
+  
+    label::before {
+        display: inline-block;
+        content: "+";
+        color: black;
+        font-size: 16px;
+        font-weight: 800;
+        width: 17px;
+        height: 17px;
+        border: 1px solid black;
+        border-radius: 30px;
+        text-align: center;
+        margin: 5px 5px;
+    }
+  
+    #expand {
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+  
+    #forlogo {
+        display: flex;
+        justify-content: center;
+        right: 0%;
+    }
+  
+    #logo{
+        width: 33px;
+        margin: 7px 10px;
+    }
+  
+    .ullist {
+        justify-content: center;
+        right: 0%;
+    }
+    
+    .list {
+        padding: 0px 0px;
+        margin: 8px 5px;
+    }
+  
+    .link{
+        font-size: 0.8rem;
+        padding:5px 8px;
+    }
+  
+    #searchbtn {
+        margin: 5px 0px;
+    }
+  
+    #searchbar{
+        height: 0;
+        padding: 10px 10px;
+        width: 100%;
+        text-align: center;
+    }
+  
+    #btn{
+        height: 20px;
+        margin:10px 0px;
+    }
+  
+    #searchbutton{
+        display: flex;
+        justify-content: center;
+    }
+  
+     #section1{
+         width:90%;
+         font-size: 0.8rem;
+         text-shadow: 2px 1px black;
+     }
+
+     #sec2-heading{
+         font-size: 1.1rem;
+     }
+  
+    #bosscontainer {
+        flex-wrap: wrap;
+    }
+
+    .section2heading{
+        font-size:1rem; 
+    }
+
+    .container-1{
+        font-size: 0.9rem;
+        height:100%;
+    }
+    .container-2{
+        font-size: 0.9rem;
+        height:100%;
+    }
+    .container-3{
+        font-size: 0.9rem;
+        height:100%;
+    }
+    
+    #contact_desc{
+        height: 125px;
+    }
+
+    #headingfor3{
+        font-size: 0.8rem;
+    }
+  
+    #btn2 {
+        width: auto;
+    }
+  
+    #footer {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+  } 
+
+
+
+          /* -------jio_phone------- */
+@media only screen and (min-width:240px) and (max-width:320px) {
+  #navbar {
+      flex-direction: column;
+  }
+
+  #toggle:checked~#expand {
+      height: 190px;
+  }
+
+  #toggle:checked~label::before {
+      content: "-";
+  }
+  
+  #boss {
+      display: flex;
+  }
+
+  #navheading {
+      display: block;
+      margin: auto;
+  }
+  
+  #navheadingh2 {
+      font-size: 1rem;
+      width: 85%;
+      text-align: center;
+      padding:0px 8px;
+      margin-left: 16px;
+  }
+
+  #container{
+      display: inline;
+  }
+
+  label::before {
+      display: inline-block;
+      content: "+";
+      color: black;
+      font-size: 16px;
+      font-weight: 800;
+      width: 17px;
+      height: 17px;
+      border: 1px solid black;
+      border-radius: 30px;
+      text-align: center;
+      margin: 5px 5px;
+  }
+
+  #expand {
+      flex-direction: column;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s;
+  }
+
+  #forlogo {
+      display: flex;
+      justify-content: center;
+      right: 0%;
+  }
+
+  #logo{
+      width: 33px;
+      margin: 7px 10px;
+  }
+
+  .ullist {
+      justify-content: center;
+      right: 0%;
+  }
+  
+  .list {
+      padding: 0px 0px;
+      margin: 8px 5px;
+  }
+
+  .link{
+      font-size: 0.8rem;
+      padding:5px 8px;
+  }
+
+  #searchbtn {
+      margin: 5px 0px;
+  }
+
+  #searchbar{
+      height: 0;
+      padding: 10px 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+  #btn{
+      height: 20px;
+      margin:10px 0px;
+  }
+
+  #searchbutton{
+      display: flex;
+      justify-content: center;
+  }
+
+   #section1{
+       width:90%;
+       font-size: 1.1rem;
+       text-shadow: 2px 1px black;
+   }
+
+  #bosscontainer {
+      flex-wrap: wrap;
+  }
+
+  #contact_desc{
+      height: 125px;
+  }
+
+  #btn2 {
+      width: 25%
+  }
+
+  #footer {
+      text-align: center;
+      font-size: 0.8rem;
+  }
+} 
+
+
+
+
+          /* -------mobile_small--------*/
+ @media only screen and (min-width:321px) and (max-width:375px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #toggle:checked~#expand {
+        height: 190px;
+    }
+
+    #toggle:checked~label::before {
+        content: "-";
+    }
+    
+    #boss {
+        display: flex;
+    }
+
+    #navheading {
+        display: block;
+        margin: auto;
+    }
+    
+    #navheadingh2 {
+        font-size: 1rem;
+        width: 85%;
+        text-align: center;
+        padding:0px 8px;
+        margin-left: 16px;
+    }
+
+    #container{
+        display: inline;
+    }
+
+    label::before {
+        display: inline-block;
+        content: "+";
+        color: black;
+        font-size: 16px;
+        font-weight: 800;
+        width: 17px;
+        height: 17px;
+        border: 1px solid black;
+        border-radius: 30px;
+        text-align: center;
+        margin: 5px 5px;
+    }
+
+    #expand {
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    #forlogo {
+        display: flex;
+        justify-content: center;
+        right: 0%;
+    }
+
+    #logo{
+        width: 33px;
+        margin: 7px 10px;
+    }
+
+    .ullist {
+        justify-content: center;
+        right: 0%;
+    }
+    
+    .list {
+        padding: 0px 0px;
+        margin: 8px 5px;
+    }
+
+    .link{
+        font-size: 0.8rem;
+        padding:5px 8px;
+    }
+
+    #searchbtn {
+        margin: 5px 0px;
+    }
+
+    #searchbar{
+        height: 0;
+        padding: 10px 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #btn{
+        height: 20px;
+        margin:10px 0px;
+    }
+
+    #searchbutton{
+        display: flex;
+        justify-content: center;
+    }
+
+     #section1{
+         width:90%;
+         font-size: 1.2rem;
+         text-shadow: 2px 1px black;
+     }
+
+    #bosscontainer {
+        flex-wrap: wrap;
+    }
+
+    #contact_desc{
+        height: 125px;
+    }
+
+    #btn2 {
+        width: 20%
+    }
+
+    #footer {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+} 
+
+
+
+          /*-------mobile_medium--------*/
+ @media only screen and (min-width:376px) and (max-width:425px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #toggle:checked~#expand {
+        height: 190px;
+    }
+
+    #toggle:checked~label::before {
+        content: "-";
+    }
+    
+    #boss {
+        display: flex;
+        height:40px;
+    }
+
+    #navheading {
+        display: block;
+        margin: auto;
+    }
+    
+    #navheadingh2 {
+        font-size: 1rem;
+        width: 85%;
+        text-align: center;
+        padding:5px 8px;
+        margin-left: 16px;
+    }
+
+    #container{
+        display: inline;
+    }
+
+    label::before {
+        display: inline-block;
+        content: "+";
+        color: black;
+        font-size: 20px;
+        font-weight: 800;
+        width: 23px;
+        height: 23px;
+        border: 1px solid black;
+        border-radius: 30px;
+        text-align: center;
+        margin: 9px 5px;
+    }
+
+    #expand {
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    #forlogo {
+        display: flex;
+        justify-content: center;
+        right: 0%;
+    }
+
+    #logo{
+        width: 41px;
+        margin: 4px 10px;
+    }
+
+    .ullist {
+        justify-content: center;
+        right: 0%;
+    }
+    
+    .list {
+        padding: 0px 0px;
+        margin: 8px 5px;
+    }
+
+    .link{
+        padding:5px 8px;
+    }
+
+    #searchbtn {
+        margin: 5px 0px;
+    }
+
+    #searchbar{
+        font-size: 1rem;
+        height: 0;
+        padding: 15px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #btn{
+        height: 20px;
+        font-size: 1rem;
+        margin:10px 0px;
+    }
+
+    #searchbutton{
+        display: flex;
+        justify-content: center;
+    }
+
+     #section1{
+        width:90%;
+        font-size: 1.2rem;
+        text-shadow: 2px 1px black;
+     }
+
+    #bosscontainer {
+        flex-wrap: wrap;
+    }
+
+    #contact_desc{
+        height: 125px;
+    }
+
+    #btn2 {
+        width: 20%
+    }
+
+    #footer {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}  
+
+
+
+          /*-------mobile_large--------*/
+ @media only screen and (min-width:426px) and (max-width:597px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #toggle:checked~#expand {
+        height: 190px;
+    }
+
+    #toggle:checked~label::before {
+        content: "-";
+    }
+    
+    #boss {
+        display: flex;
+        height:40px;
+    }
+
+    #navheading {
+        display: block;
+        margin: auto;
+    }
+    
+    #navheadingh2 {
+        font-size: 1rem;
+        width: 85%;
+        text-align: center;
+        padding:5px 8px;
+        margin-left: 16px;
+    }
+
+    #container{
+        display: inline;
+    }
+
+    label::before {
+        display: inline-block;
+        content: "+";
+        color: black;
+        font-size: 20px;
+        font-weight: 800;
+        width: 23px;
+        height: 23px;
+        border: 1px solid black;
+        border-radius: 30px;
+        text-align: center;
+        margin: 9px 5px;
+    }
+
+    #expand {
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    #forlogo {
+        display: flex;
+        justify-content: center;
+        right: 0%;
+    }
+
+    #logo{
+        width: 41px;
+        margin: 4px 10px;
+    }
+
+    .ullist {
+        justify-content: center;
+        right: 0%;
+    }
+    
+    .list {
+        padding: 0px 0px;
+        margin: 8px 5px;
+    }
+
+    .link{
+        padding:5px 8px;
+    }
+
+    #searchbtn {
+        margin: 5px 0px;
+    }
+
+    #searchbar{
+        font-size: 1rem;
+        height: 0;
+        padding: 15px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #btn{
+        height: 20px;
+        font-size: 1rem;
+        margin:10px 0px;
+    }
+
+    #searchbutton{
+        display: flex;
+        justify-content: center;
+    }
+
+     #section1{
+        width: 95%;
+        font-size: 1.4rem;
+        text-shadow: 2px 1px black;
+     }
+
+    #bosscontainer {
+        flex-wrap: wrap;
+    }
+
+    #contact_desc{
+        height: 140px;
+    }
+
+    /* #section4::before{
+        height: 100%;
+    } */
+
+    #btn2 {
+        width: 20%
+    }
+
+    #footercontainer{
+        /* height: 16%; */
+        display: inline-flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+
+    #footer {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+          /*-------tablet--------*/
+  @media only screen and (min-width:598px) and (max-width:768px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #toggle:checked~#expand {
+        height: 190px;
+    }
+
+    #toggle:checked~label::before {
+        content: "-";
+    }
+    
+    #boss {
+        display: flex;
+        height:40px;
+    }
+
+    #navheading {
+        display: block;
+        margin: auto;
+    }
+    
+    #navheadingh2 {
+        font-size: 1rem;
+        width: 85%;
+        text-align: center;
+        padding:5px 8px;
+        margin-left: 16px;
+    }
+
+    #container{
+        display: inline;
+    }
+
+    label::before {
+        display: inline-block;
+        content: "+";
+        color: black;
+        font-size: 20px;
+        font-weight: 800;
+        width: 23px;
+        height: 23px;
+        border: 1px solid black;
+        border-radius: 30px;
+        text-align: center;
+        margin: 9px 5px;
+    }
+
+    #expand {
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    #forlogo {
+        display: flex;
+        justify-content: center;
+        right: 0%;
+    }
+
+    #logo{
+        width: 41px;
+        margin: 4px 10px;
+    }
+
+    .ullist {
+        justify-content: center;
+        right: 0%;
+    }
+    
+    .list {
+        padding: 0px 0px;
+        margin: 8px 5px;
+    }
+
+    .link{
+        padding:5px 8px;
+    }
+
+    #searchbtn {
+        margin: 5px 0px;
+    }
+
+    #searchbar{
+        font-size: 1rem;
+        height: 0;
+        padding: 15px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #btn{
+        height: 20px;
+        font-size: 1rem;
+        margin:10px 0px;
+    }
+
+    #searchbutton{
+        display: flex;
+        justify-content: center;
+    }
+
+     #section1{
+        width: 95%;
+        font-size: 1.4rem;
+        text-shadow: 2px 1px black;
+     }
+
+    #bosscontainer {
+        flex-wrap: wrap;
+    }
+
+    #contact_desc{
+        height: 140px;
+    }
+
+    /* #section4::before{
+        height: 111%;
+    } */
+
+    #btn2 {
+        width: 20%
+    }
+
+    #footercontainer{
+        /* height: 27%; */
+        display: inline-flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+
+    #footer {
+        width: 100%;
+        text-align: center;
+    }
+} 
+
+
+
+          /*-between_tab_and_laptop-*/
+ @media only screen and (min-width:769px) and (max-width:810px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #toggle:checked~#expand {
+        height: 190px;
+    }
+
+    #toggle:checked~label::before {
+        content: "-";
+    }
+    
+    #boss {
+        display: flex;
+        height:40px;
+    }
+
+    #navheading {
+        display: block;
+        margin: auto;
+    }
+    
+    #navheadingh2 {
+        font-size: 1rem;
+        width: 85%;
+        text-align: center;
+        padding:5px 8px;
+        margin-left: 16px;
+    }
+
+    #container{
+        display: inline;
+    }
+
+    label::before {
+        display: inline-block;
+        content: "+";
+        color: black;
+        font-size: 20px;
+        font-weight: 800;
+        width: 23px;
+        height: 23px;
+        border: 1px solid black;
+        border-radius: 30px;
+        text-align: center;
+        margin: 9px 5px;
+    }
+
+    #expand {
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    #forlogo {
+        display: flex;
+        justify-content: center;
+        right: 0%;
+    }
+
+    #logo{
+        width: 41px;
+        margin: 4px 10px;
+    }
+
+    .ullist {
+        justify-content: center;
+        right: 0%;
+    }
+    
+    .list {
+        padding: 0px 0px;
+        margin: 8px 5px;
+    }
+
+    .link{
+        padding:5px 8px;
+    }
+
+    #searchbtn {
+        margin: 5px 0px;
+    }
+
+    #searchbar{
+        font-size: 1rem;
+        height: 0;
+        padding: 15px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #btn{
+        height: 20px;
+        font-size: 1rem;
+        margin:10px 0px;
+    }
+
+    #searchbutton{
+        display: flex;
+        justify-content: center;
+    }
+
+     #section1{
+        width: 95%;
+        font-size: 1.4rem;
+        text-shadow: 2px 1px black;
+     }
+
+    #bosscontainer {
+        flex-wrap: wrap;
+    }
+
+    #contact_desc{
+        height: 140px;
+    }
+
+    /* #section4::before{
+        height: 111%;
+    } */
+
+    #btn2 {
+        width: 20%
+    }
+
+    #footercontainer{
+        /* height: 27%; */
+        display: inline-flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+
+    #footer {
+        width: 100%;
+        text-align: center;
+    }
+}  
+
+
+
+
+          /*-between_tab_and_laptop-*/
+ @media only screen and (min-width:811px) and (max-width:920px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #toggle:checked~#expand {
+        height: 190px;
+    }
+
+    #toggle:checked~label::before {
+        content: "-";
+    }
+    
+    #boss {
+        display: flex;
+        height:40px;
+    }
+
+    #navheading {
+        display: block;
+        margin: auto;
+    }
+    
+    #navheadingh2 {
+        font-size: 1rem;
+        width: 85%;
+        text-align: center;
+        padding:5px 8px;
+        margin-left: 16px;
+    }
+
+    #container{
+        display: inline;
+    }
+
+    label::before {
+        display: inline-block;
+        content: "+";
+        color: black;
+        font-size: 20px;
+        font-weight: 800;
+        width: 23px;
+        height: 23px;
+        border: 1px solid black;
+        border-radius: 30px;
+        text-align: center;
+        margin: 9px 5px;
+    }
+
+    #expand {
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    #forlogo {
+        display: flex;
+        justify-content: center;
+        right: 0%;
+    }
+
+    #logo{
+        width: 41px;
+        margin: 4px 10px;
+    }
+
+    .ullist {
+        justify-content: center;
+        right: 0%;
+    }
+    
+    .list {
+        padding: 0px 0px;
+        margin: 8px 5px;
+    }
+
+    .link{
+        padding:5px 8px;
+    }
+
+    #searchbtn {
+        margin: 5px 0px;
+    }
+
+    #searchbar{
+        font-size: 1rem;
+        height: 0;
+        padding: 15px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #btn{
+        height: 20px;
+        font-size: 1rem;
+        margin:10px 0px;
+    }
+
+    #searchbutton{
+        display: flex;
+        justify-content: center;
+    }
+
+     #section1{
+        width: 95%;
+        font-size: 1.4rem;
+        text-shadow: 2px 1px black;
+     }
+
+    #bosscontainer {
+        flex-wrap: wrap;
+    }
+
+    #contact_desc{
+        height: 140px;
+    }
+
+    #section4::before{
+        height: 102%;
+    }
+
+    #btn2 {
+        width: 20%
+    }
+    
+    #footercontainer{
+        height: 17%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+    
+    #footer {
+        width: 100%;
+        text-align: center;
+    }
+}  
+
+
+
+          /*----laptop----*/
+ @media only screen and (min-width:921px) and (max-width:1024px) {
+    
+    #btn2 {
+        width: 12%;
+        padding: 1% 1%;
+    }
+
+    .container-1{
+        height: 94vh;
+    }
+    .container-2{
+        height: 94vh;
+    }
+    .container-3{
+        height: 94vh;
+    }
+    
+    #contact_desc {
+        height: 130px;
+    }
+
+    #section4::before{
+        height: 118%;
+    }
+
+    #footercontainer{
+        height: 34%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+
+    #footer{
+        width: 100%;
+    }
+    
+} 
+
+
+
+          /*--between_laptop_and_large_laptop--*/
+ @media only screen and (min-width:1025px) and (max-width:1212px) {
+
+    .clients-logo {
+        height: 30%;
+    }
+
+    #contact_desc {
+        height: 88px;
+    }
+
+    #btn2 {
+        width: 6%;
+        padding: 1% 1%;
+    }
+
+    /* #card3{
+        width: 49%;
+    } */
+    
+    #section4::before{
+        height: 104%;
+    }
+
+    #footercontainer{
+        height: 19%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+
+    #footer{
+        width: 100%;
+    }
+} 
+
+/* ------------------------------------------------------------------------------------------- */
+
+          /*--large_laptop--*/
+ @media only screen and (min-width:1213px) and (max-width:1440px) {
+
+     .container-1{
+         height: 31vw;
+     }
+     .container-2{
+         height: 31vw;
+     }
+     .container-3{
+         height: 31vw;
+     }
+
+    .clients-logo {
+        height: 30%;
+    }
+
+    #contact_desc {
+        height: 88px;
+    }
+
+    #btn2 {
+        width: 6%;
+        padding: 1% 1%;
+    }
+
+    
+    #section4::before{
+        height: 97%;
+    }
+
+    #footercontainer{
+        height: 11%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+
+    #footer{
+        width: 100%;
+    }
+} 
+
+
+
+          /*--between_large_laptop_and_4k--*/
+ @media only screen and (min-width:1441px) and (max-width:2000px) {
+    #navbar {
+        height: 11%;
+    }
+
+    #forlogo{
+        display: flex;
+        align-items: center;
+    }
+
+    #logo {
+        width: 63px;
+        height: 63px;
+        border-radius: 40px;
+    }
+
+    .link {
+        font-size: 1.8rem;
+    }
+
+    #searchbar {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 70%;
+    }
+
+    #btn {
+        font-size: 1.8rem;
+    }
+
+    #section1 {
+        font-size: 2.5rem;
+        text-shadow: 5px 2px black;
+        height: 116%;
+    }
+
+    #section1::before{
+        height:100%;
+    }
+
+    #sec2-heading {
+        font-size: 2rem;
+    }
+
+    #bosscontainer {
+        font-size: 2rem;
+    }
+
+    .container-1{
+        height:91vh;
+    }
+
+    .container-2{
+        height:91vh;
+    }
+
+    .container-3{
+        height:91vh;
+    }
+
+    #section3{
+        height: 110%;
+    }
+
+    #section3::before{
+        height: 110%;
+    }
+
+    #headingfor3 {
+        font-size: 3rem;
+    }
+
+    .clients-logo{
+        height: 200px;
+    }
+
+    .contactform {
+        font-size: 2rem;
+    }
+
+    #contact_desc {
+        height: 150px;
+    }
+
+    #btn2 {
+        width: 9%;
+        padding: 15px 0%;
+    }
+
+    #section4::before{
+        height: 94%;
+    }
+
+    #footercontainer{
+        height: 8%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+
+    #footer {
+        width:100%;
+        font-size: 2rem;
+    }
+} 
+
+
+
+          /*----4k----*/
+  @media only screen and (min-width:2001px) and (max-width:2560px) {
+    #navbar {
+        height: 12%;
+    }
+
+    #forlogo{
+        display: flex;
+        align-items: center;
+    }
+
+    #logo {
+        width: 63px;
+        height: 63px;
+        border-radius: 40px;
+    }
+
+    .link {
+        font-size: 1.8rem;
+    }
+
+    #searchbar {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 70%;
+    }
+
+    #btn {
+        font-size: 1.8rem;
+    }
+
+    #section1 {
+        font-size: 2.5rem;
+        text-shadow: 5px 2px black;
+    }
+
+    #sec2-heading {
+        font-size: 2rem;
+    }
+
+    #bosscontainer {
+        font-size: 2rem;
+    }
+
+    .container-1{
+        height: 109vh;
+    }
+    .container-2{
+        height: 109vh;
+    }
+    .container-3{
+        height: 109vh;
+    }
+
+    #headingfor3 {
+        font-size: 3rem;
+    }
+
+    .clients-logo{
+        height: 200px;
+    }
+
+    .contactform {
+        font-size: 2rem;
+    }
+
+    #contact_desc {
+        height: 150px;
+    }
+
+    #btn2 {
+        width: 9%;
+        padding: 15px 0%;
+    }
+
+    #section4::before{
+        height: 95%;
+    }
+
+    #footercontainer{
+        height: 8%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+
+    #footer {
+        width:100%;
+        font-size: 2rem;
+    }
+}   
