@@ -1,0 +1,78 @@
+<!-- author:yash,
+     version:1.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar" style="height: 44px;">
+
+        <div class="logo" id="logo">
+            <a href="index.html"><img src="./logo.jpg" alt="logo"></a>
+        </div>
+
+        <div class="list" id="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+
+        <div class="title" id="title">
+            <a href="index.html">
+                <h1>NoteBook</h1>
+            </a>
+        </div>
+
+        <div class="searchbarbtn" id="searchbarbtn">
+
+            <div class="searchbox" id="searchbox">
+                <input type="text" id="inputbx" placeholder="search what you want">
+            </div>
+
+            <div class="searchbutton" id="searchbutton">
+                <input type="button" value="search">
+            </div>
+
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <button class="hamburgerbtn" id="hamburgerbtn">&equiv;</button>
+        </div>
+
+    </nav>
+
+    <div class="parentcontainer" id="parentcontainer">
+
+        <div class="textareacontainer" id="textareacontainer">
+            <textarea class="textarea" id="textarea" cols="30" rows="10" placeholder="Add a Note"></textarea>
+        </div>
+
+        <div class="btncontainer" id="btncontainer">
+            <button class="addnotebtn" id="addnotebtn">Add Note</button>
+            <button class="addnotebtn" id="resetdata">Delete All Note</button>
+        </div>
+
+    </div>
+ 
+    <hr class="pchr">
+
+    <div class="indicatorbox" id="indicator">
+        <p class="indicatorline" id="indicatorline">Your Note's</p>
+    </div>
+
+    <div class="noteshowcontainer" id="noteshowcontainer">
+
+    </div> 
+
+</body>
+<script src="script.js"></script>
+</html>

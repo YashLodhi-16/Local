@@ -1,0 +1,1304 @@
+ 
+ <!-- <script>
+
+        console.log('yash lodhi');
+
+        console.table({ name: 'yash', language: 'js', tutorial: 2 });
+
+        console.assert(0 > 1, "Expression is false");
+
+        console.warn('this is a warning');
+
+        console.time();
+
+        for (i = 0; i < 10; i++) {
+            console.log('yash lodhi');
+        }
+
+        console.timeEnd();
+
+        console.error("this is a simple error");
+
+        for (i = 0; i < 10; i++) {
+            console.count(i);
+        }
+
+        console.group('simple');
+
+        console.log('Grouped');
+
+        console.groupEnd('simple');
+
+        console.log('new section');
+
+        console.clear();
+
+        const spacing = '8px';
+
+        const mystyle = `
+        padding:${spacing}
+        background-color: white; 
+        color: red; 
+        font-style:italic; 
+        border: 1px solid black ;
+        font-size: 70px;
+         `;
+
+        console.log('%c code with harry',mystyle);
+
+
+        tut=3;
+
+        /* Most common programming case types:
+        1. camelCase  
+        2. kebab-case
+        3. snake_case 
+        4. PascalCase 
+        */
+
+
+        tut=4;
+
+        let myvar=null;
+
+        console.log('the data type of myvar is '+(typeof myvar));
+
+        tut=5;
+
+        let res;
+
+        res = Number('100');
+
+        console.log(res);
+
+        console.log( parseInt('$100 dollars') );
+
+        let a=90
+
+        let res;
+
+        res= String(a) // returns a string from a number variable a
+
+        String(378009) // returns a string from a number literal 378009
+
+        a.toString() 
+
+        console.log(a.toString());
+
+        let b=(378009).toString()
+
+        console.log(res);
+
+        console.log(a);
+
+        console.log(b);
+
+        let number = parseFloat('34.098');
+
+        console.log(number.toFixed(2), (typeof number));
+
+        tut=6;
+
+let string="Those an equal point no years do. Depend warmth fat but her but played ";
+
+// console.log(string.charAt(7));
+
+let string2=string.concat("is ","awesome! ");
+
+// console.log(string2);
+
+// string2=string.indexOf('an');
+
+// string2=string.lastIndexOf('a');
+
+// string2=string.slice(0,10);
+
+string2=" a, b, c, d,,";
+
+// console.log(string2.split(","));
+
+// console.log(string2.split(" "));
+
+string2="Javascript Programming";
+
+// console.log(string2.substring(0,10));
+
+// console.log(string2.toLowerCase());
+
+// console.log(string2.toUpperCase());
+
+string2="welcome to programming World!!";
+
+//  console.log(string2.search('programming'));
+
+string2="Apple, Banana, Kiwi";
+
+// console.log(string2.substr(7,6));
+
+string2=`this is an example of
+            template literal`;
+
+string2="yash";
+
+string="lodhi";
+
+let greeting=`welcome to ${string2} ${string}`;
+
+// console.log(greeting);
+
+let fruit1 = "orange\"";
+
+let fruit2 = "orange\"";
+
+let myhtml =`Hello ${string2} ${string}
+<h1>This is "my" heading </h1>
+<p> You like ${fruit1} and ${fruit2} </p>
+`;
+
+document.body.innerHTML= myhtml;
+
+
+tut=6;
+
+// let arr = new Array();
+
+// let arr = ['first element','second element','last element','after last element'];
+
+// console.log(arr[0]);
+
+// console.log(arr[1]);
+
+// console.log(arr[arr.length-1]);
+
+// console.log(arr.length);
+
+// console.log(arr.indexOf('first element'));
+
+arr = [34, 74, 61, 10, 00];
+
+// console.log(arr.sort());
+
+// console.log(arr.reverse());
+
+// let concat= [3,99,65];
+
+// console.log(arr.concat(concat)); 
+
+arr.push('mango');
+
+// console.log(arr); 
+
+arr.shift();
+
+// console.log(arr);
+
+arr.unshift('strawberry');
+
+// console.log(arr);
+
+arr.splice(0, 1);
+
+// console.log(arr);
+
+// let user=new Object();
+
+let user = {
+    name: 'yash',
+    age: 26,
+    language: "javascript"
+};
+
+// console.log(user);
+
+// console.log(user.name);
+
+// console.log(user['name']);
+
+// console.log(user.age = 88);
+
+
+tut=8;
+
+// if(5>0){
+
+//     console.log('5 is greater than 0');
+
+// }
+
+// if(5<0){
+
+//     console.log('5 is greater than 0');
+
+// }
+
+let salary=500;
+
+// if(salary>1000){
+
+//     console.log('My Salary is greater than 1000');
+
+// }
+
+// else{
+
+//     console.log('My Salary is less than or equal to 1000');
+
+// }
+
+// if (salary > 1000) {
+
+//     console.log('My Salary is greater than 1000'); 
+
+// } 
+
+// else if(salary < 1000){
+
+//     console.log('My Salary is less than 1000');
+
+// }
+
+// else{
+
+//     console.log('My Salary equal to 1000');
+
+// }
+
+// console.log(5>0? "Greater" : "Smaller");
+
+let age = 18;
+
+// switch (age){
+
+//     case 18:
+
+//         console.log('You are 18');
+
+//         break;
+
+//     case 38:
+
+//         console.log('you are 38'); 
+
+//         break;
+    
+//     case 28:
+
+//         console.log('you are 28');
+
+//         break;
+
+//     default:
+
+//         console.log('you are unknown age');
+
+//         break;
+
+// }
+
+
+tut=9;
+
+// for(let i=0;i<=10;i++){
+
+//     console.log(i);
+
+// }
+
+// let person={
+
+//     name:'yash',
+
+//     language:'javascipt',
+
+//     age:20
+
+// };
+
+// for(let i in person){
+
+//     console.log(i+' = '+person[i]);
+
+// }
+
+// const alpha = ['yash','|||||||||||||||||||||||||||||||','lodhi'];
+
+// for(let i = 0; i< alpha.length;i++){
+
+//     console.log(alpha[i]);
+
+// }
+
+// let i = 1, n=100;
+
+// while(i<=n){
+
+//     console.log(i);
+
+//     i+=1;
+
+// }
+
+// let i =1, n=100;
+
+// do{
+
+//     console.log(i);
+
+//     i++;
+
+// }while(i <= n);
+
+// for(let i =0; i<= 100;i++){
+
+//     console.log(i);
+
+//     if(i==90){
+
+//         break;
+
+//     }
+
+// }
+
+// let i= 10;
+
+// for(let x =0; x<= i;x++){
+
+//     if(x==5){
+
+//         continue;
+        
+//     }
+    
+//     console.log(x);
+
+// }
+
+// let arr = [1,2,3];
+
+// arr.forEach(function(element, index, array){
+
+//     console.log(element, index, array);
+
+// })
+
+
+tut=10;
+
+// function print_message(message){
+
+// console.log(message);
+
+// }
+
+// print_message("hello world");
+
+// let add = function(a, b){
+
+//     return a+b;
+
+// }
+
+// console.log(add(4,3));
+
+//  function print_message(message){
+
+//     console.log(message);
+    
+//     } 
+
+// let result =print_message('Hello World');
+
+// console.log('Result:',result);
+
+// function get_Distance(speed, time){
+
+//     let dist = speed * time;
+
+//     return dist;
+
+// }
+
+// let myDistance = get_Distance(8,5);
+
+// console.log(myDistance);
+
+
+tut=11;
+
+// let a = window.innerWidth;
+
+// let b = window.innerHeight;
+
+// alert("Width: "+a+", "+"Height: "+b);
+
+// a = prompt('this will destroy your computer. type your name');
+
+// console.log(a);
+
+// a = confirm('Are you sure you want to delete this page?');
+
+// console.log(a);
+
+// a = window.innerHeight;
+
+// console.log(a);
+
+// a = window.innerWidth;
+
+// console.log(a);
+
+// a = window.scrollY;
+
+// console.log(a);
+
+// a = window.location.toString();
+
+// console.log(a);
+
+// a = window.history;
+
+// console.log(a);
+
+tut=12;
+
+// let a = document.all;
+
+// console.log(a);
+
+// a = document.all;
+
+// console.log(a);
+
+// a = document.body;
+
+// console.log(a);
+
+// a = document.forms[0];
+
+// console.log(a);
+
+// Array.from(a).forEach(function(element) {
+//     console.log(element);
+// })
+
+// a = document.links[0];
+
+// console.log(a);
+
+// use document.images and document.scripts and print the list of images and scripts on an html page
+
+// let para = document.getElementById('para');
+
+// let scripts = document.scripts;
+
+// Array.from(scripts).forEach((element)=>{
+
+    // let scriptsSrc = element.src;
+
+    // para.innerText = scriptsSrc;
+
+    // });
+
+tut=14;
+
+// let a = document.getElementById('container');
+
+// a.style.border = '2px solid red';
+
+// console.log(a.className);
+
+// console.log(a.childNodes);
+
+// console.log(a.parentNode);
+
+// console.log(a.innerText);
+
+// console.log(a.innerHTML);
+
+
+// let b = document.querySelector('#container');
+
+//  b = document.querySelector('.container');
+
+//  b = document.querySelector('p');
+
+//  b = document.querySelectorAll('.heading');
+
+
+// b = document.getElementsByTagName('div');
+
+// for (let i = 0; i< b.length; i++){
+
+//     b[i].style.border = '1px solid blue';
+
+// }
+
+// b = document.getElementsByClassName('container');
+
+// Array.from(b).forEach((e)=>{
+
+//     console.log(e);
+
+//     e.style.border = ' 3px solid green';
+
+// })
+
+tut=15;
+
+let myhtml = `
+
+<div class="add" id="parentDiv">
+
+        <h1 id="heading"> Welcome to Code With Harry</h1>
+
+        <hr>
+
+        <div id="myfirst" class="child red good" id="first">child 1
+
+            <ul class="this" id="myList">
+
+                <li class="childul">this</li>
+
+                <li class="childul">is</li>
+
+                <li class="childul">a</li>
+
+                <li class="childul">list </li>
+
+                <li class="childul">of my dreams</li>
+
+            </ul>
+
+        </div>
+
+        <hr>
+
+        <div class="child" id="sp1">child 2</div>
+
+        <div class="child red" id="sp2">child 3</div>
+
+        <div class="child">child 4</div>
+
+        <form action="none.html" method="post">
+
+            <a id="myAnchor">Go to Code With Harry</a>
+
+            <br>
+
+            <br>
+
+            Search this website: <input type="text" name="Hello" id="">
+
+            <input type="button" value="submit">
+
+        </form>
+
+        <hr>
+
+    </div>
+
+    <div id="myid1"> </div>
+
+    <br>
+
+    <div class="no">this is a dummy div1</div>
+
+    <div class="no">this is a dummy div2</div>
+
+    <div class="no">this is a dummy div3</div>
+
+`
+document.body.innerHTML = myhtml;
+
+//  const component = document.querySelector('.add');
+
+// console.log(component);
+
+// const items = document.querySelector('.this');
+
+// const l_Items = items.children;
+
+// console.log(l_Items);
+
+// const mylist = document.querySelectorAll('li');
+
+// const firstItem = mylist[0];
+
+// const secondItem = mylist[1];
+
+// console.log(firstItem);
+
+// console.log(secondItem);
+
+// const mylist = document.querySelectorAll('li');
+
+// const firstItem = mylist[0];
+
+// const secondItem = mylist[1];
+
+// console.log(firstItem.parentElement);
+
+// console.log(secondItem.parentElement);
+
+// const item1 = document.querySelectorAll('li');
+
+// const item2 = item1.nextElementSibling;
+
+// console.log(item2);
+
+// const item1 = document.querySelectorAll('li')[1];
+
+// const item2 = item1.previousElementSibling;
+
+// console.log(item2); 
+
+tut=16;
+
+let myhtml = `
+
+<div class="add" id="parentDiv">
+
+        <h1 id="heading"> Welcome to Code With Harry</h1>
+
+        <hr>
+
+        <div id="myfirst" class="child red good" id="first">child 1
+
+            <ul class="this" id="myList">
+
+                <li class="childul">this</li>
+
+                <li class="childul">is</li>
+
+                <li class="childul">a</li>
+
+                <li class="childul">list </li>
+
+                <li class="childul">of my dreams</li>
+
+            </ul>
+
+        </div>
+
+        <hr>
+
+        <div class="child" id="sp1">child 2</div>
+
+        <div class="child red" id="sp2">child 3</div>
+
+        <div class="child">child 4</div>
+
+        <form action="none.html" method="post">
+
+            <a id="myAnchor">Go to Code With Harry</a>
+
+            <br>
+
+            <br>
+
+            Search this website: <input type="text" name="Hello" id="">
+
+            <input type="button" value="submit">
+
+        </form>
+
+        <hr>
+
+    </div>
+
+    <div id="myid1"> </div>
+
+    <br>
+
+    <div class="no">this is a dummy div1</div>
+
+    <div class="no">this is a dummy div2</div>
+
+    <div class="no">this is a dummy div3</div>
+
+`
+document.body.innerHTML = myhtml;
+
+let element = document.createElement("div");
+
+let paragraph = document.createElement("p");
+
+let text = document.createTextNode("this is a paragraph");
+
+paragraph.appendChild(text);
+
+let myAnchor= document.getElementById('myAnchor');
+
+myAnchor.setAttribute("href","https://codewithharry.com");
+
+myAnchor.setAttribute("target","_blank");
+
+myAnchor.innerText="codewithharry.com";
+
+let target = myAnchor.getAttribute("target");
+
+// let a = history.go(-1);
+
+// let b = history.go(1);
+
+let c = history;
+
+myAnchor.removeAttribute("target");
+
+let result = myAnchor.hasAttribute('target');
+
+// let element1= document.getElementById("myid1");
+
+// let element2 = document.createElement("u");
+
+// let content = document.createTextNode("Added Content");
+
+// element2.appendChild(content);
+
+// element1.replaceWith(element2);
+
+let sp1 = document.getElementById("sp1");
+
+let sp2 = document.getElementById("sp2");
+
+let parentDiv = document.getElementById("parentDiv");
+
+parentDiv.replaceChild(sp1,sp2);
+
+let list = document.getElementById("myList");
+
+// if (list.children) {
+    
+//     list.removeChild(list.children[1]);
+// }
+// for (const key in list) {
+
+
+//     list.removeChild(list.children[0]);
+
+//     if (list.children.length==false) {
+
+//     break;
+
+//     }
+
+// }
+
+tut=17;
+
+// let button = `<input  value="click here" onclick=Alert() type="button">`;
+
+// document.body.innerHTML = button;
+
+// function Alert() {
+
+//     confirm("delete")
+
+//     console.log('you clicked here');
+
+//     alert("you");
+
+// }
+
+// let button = `<input id="button" value="click here" type="button"
+
+// <div id="container">
+
+// <p id="para">lorem</p>
+
+// </div>`
+
+// document.body.innerHTML = button;
+
+// let buttonId = document.getElementById("button");
+
+// buttonId.addEventListener("click",function(){
+
+//     console.log("you have clicked on the button");
+
+// });
+
+// let buttonId = document.getElementById("button");
+
+// buttonId.addEventListener("click",myfunction);
+
+// function can run with or without arguments
+
+// function myfunction(event){
+
+//     console.log(event.type + " at " + event.currentTarget);
+
+//     console.log("Coordinates: " + event.clientX + " : " + event.clientY);
+
+// }
+
+// let buttonId = document.getElementById("button");
+
+// buttonId.addEventListener("focus", (e) => {
+
+//     e.target.style.color = "red"
+
+// });
+
+// buttonId.addEventListener("blur", function blurFunction(e) {
+
+//     console.log("Hello World!");
+
+//     buttonId.style.color="black";
+
+// });
+
+tut=18;
+
+// const myclick = document.querySelector('.headingContainer')
+
+// myclick.addEventListener('dblclick',(e)=>{
+
+// console.log("Double click event occur");
+
+// })
+
+// const test = document.getElementById('container');
+
+// test.addEventListener('mousemove',function (e){
+
+//     console.log("Mousemove event occur");
+
+// })
+
+// test.addEventListener('mouseover',(event)=>{
+
+//     event.target.style.color = "red";
+
+// })
+
+// test.addEventListener('mouseout',(event)=>{
+
+//     event.target.style.color = "blue";
+
+// })
+
+// test.addEventListener('mouseenter',(e)=>{
+
+//     test.style.border = "5px dotted blue"
+
+// })
+
+// test.addEventListener('mouseleave',(e)=>{
+
+//     test.style.border = "5px dotted red"
+
+// })
+
+// test.addEventListener('mousedown',(e)=>{
+
+//     console.log("Mousedown event occur");
+
+// })
+
+// test.addEventListener('mouseup',(e)=>{
+
+//     console.log("mouseup event occur");
+
+// })
+
+// const container = document.querySelector('.container');
+
+// container.addEventListener("mousemove", (e)=>{
+
+//     console.log(e.offsetX, e.offsetY);
+
+//     let three = e.offsetX-e.offsetY;
+
+//     container.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY}, ${three})
+
+//     `
+
+//     console.log("You triggered mouse move event");
+
+// })
+
+tut=19;
+
+ //creating a global variable i for indexing
+
+        var i=0;
+
+        //creating a local variable a for containing all links in document as object HTMLCollection
+
+        let a = document.links;
+
+        //making an array from a using Array.from(a) and initiallize for each function for iteration in a array 
+
+        Array.from(a).forEach(element => {
+
+        //adding a if condition for element that it does'nt contains ('javascript') word
+
+        if (!element.toString().includes('javascript'))
+
+         {
+
+            //printing index using i and message for this condition
+
+                console.log(`At index ${(i++)} we did'nt found anything`);
+
+        }
+
+         else
+
+          {
+
+            //printing index using i message for this condition
+
+            console.log(`We found this at index ${(i++)}`);
+
+            //converting element to a string and printing on console
+
+            console.log(element.toString());
+
+        }
+
+});
+
+tut=20;
+
+// let key = 'Entry_1';
+
+// localStorage.setItem(key, 'Value');
+
+// let myItem = localStorage.getItem(key);
+
+// console.log(myItem);
+
+// localStorage.setItem(key, 'New Value')
+
+// myItem = localStorage.getItem(key);
+
+// console.log(myItem);
+
+// localStorage.removeItem(key);
+
+// console.log(localStorage);
+
+// localStorage.clear();
+
+// console.log(localStorage);
+
+// let myObj = { name: 'Harry', language: 'JavaScript' };
+
+// localStorage.setItem(key, JSON.stringify(myObj));
+
+// let item = JSON.parse(localStorage.getItem(key));
+
+// console.log(item);
+
+// sessionStorage.setItem('sessionName', 'sHarry');
+
+// let myObj = sessionStorage.getItem('sessionName')
+
+// console.log(myObj);
+
+tut=21;
+
+l
+let heading = 'Enter Your Name:';
+
+let myHtml = `
+
+<style>
+*{
+
+    margin:0px;
+
+    padding:0px;
+
+}
+
+body{
+
+    background: linear-gradient(to right bottom, salmon, pink);
+
+    background-attachment:fixed;
+
+    padding:5%;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+#container{
+
+    width:100%;
+
+    height:50%;
+
+    border: 2px solid black;
+
+    background:linear-gradient(to right bottom, palegoldenrod, white);
+
+}
+
+#para{
+    text-align:left;
+}
+
+#textarea{
+
+    display:none;
+
+}
+
+#btn{
+
+    width:88px;
+
+    padding:1%;
+
+    margin-top:2%;
+
+    border: 2px solid black;
+
+    background :linear-gradient(to right bottom, green, white);
+
+}
+
+</style>
+
+<div tabindex="0" id="container">
+
+<p id='para'></p>
+
+<textarea id="textarea" placeholder="${heading}"></textarea>
+
+</div>
+
+<input type="button" value="Reset Data" id="btn">
+
+`;
+
+document.body.innerHTML = myHtml;
+
+let container = document.getElementById('container');
+
+let para = document.getElementById('para');
+
+let btn = document.getElementById('btn');
+
+let textarea = document.getElementById('textarea');
+
+let reset = document.getElementById('btn');
+
+let item = localStorage.getItem('div');
+
+container.addEventListener('focus', (e) => {
+
+    para.style.display = "none";
+
+    textarea.style = `
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    outline:none;
+
+    text-align:left;
+
+    font-weight:bolder;
+
+    `;
+
+});
+
+reset.addEventListener('click', (e) => {
+
+    localStorage.clear();
+
+    location.reload();
+
+});
+
+textarea.addEventListener('blur', (e) => {
+
+    textarea.style.display = 'none';
+
+    para.style.display = 'block';  
+
+    let valuein = container.lastElementChild.value;
+
+    console.log(valuein);
+
+    localStorage.setItem('div', valuein);
+
+    if (localStorage.getItem('div') == '') {
+
+        alert('invalid input');
+
+        localStorage.clear();
+
+    }else{
+
+        alert('refresh to see changes');
+
+    }
+});
+
+if (item == null) {
+
+    para.innerText = heading;
+
+    textarea.innerText = heading;
+
+}
+
+else {
+
+    para.innerText = item;
+
+    textarea.innerText = item;
+
+}
+
+tut=22;
+
+
+
+tuto=23;
+
+let x = 3;
+
+let y = 6;
+
+let z;
+
+z = x+y;
+
+z = x-y;
+
+z = x*y;
+
+z = x/y;
+
+z = Math.round(5.2);
+
+z = Math.ceil(5.2);
+
+z = Math.floor(-5.3);
+
+z = Math.abs(5);
+
+z = Math.sqrt(64);
+
+z = Math.pow(2, 3);
+
+z = Math.min(2, 3,);
+
+z = Math.max(2, 3,);
+
+z = Math.random();
+
+z = Math.ceil(100*Math.random());
+
+z = 100*Math.random();
+
+z = Math.ceil(50 + (100-50)*Math.random());
+
+console.log(z);
+
+tut=24;
+
+// let today = new Date();
+
+// console.log(typeof today);
+
+// console.log(today);
+
+// let otherDate = new Date();
+
+// console.log(otherDate);
+
+// let a;
+
+// a = otherDate.getDate();
+
+// a = otherDate.getDay();
+
+// a = otherDate.getMinutes();
+
+// a = otherDate.getSeconds();
+
+// a = otherDate.getMilliseconds();
+
+// a = otherDate.getHours();
+
+// a = otherDate.getTime();
+
+// a = otherDate.getMonth();
+
+// console.log(a);
+
+// console.log(otherDate.setDate(23));
+
+// console.log(otherDate.setMonth(0));
+
+// console.log(otherDate.setFullYear(1900));
+
+// console.log(otherDate.setMinutes(2));
+
+// console.log(otherDate.setHours(1));
+
+// console.log(otherDate.setSeconds(3));
+
+// console.log(otherDate);
+
+tut=27;
+
+// Objects created using object literal:-
+
+var mycar = {
+    
+    make:'Ford',
+    
+    model:'Mustang',
+    
+    year: 2000
+    
+};
+
+// Objects created using the constructor function:-
+
+function Mycar(make,model,year){
+    
+    this.make = make;
+    
+    this.model = model;
+    
+    this.year = year;
+    
+    this.run = function(){
+        
+        console.log(make, model, year);
+        
+    }
+    
+};
+
+let car1 = new Mycar('ford','mustang',2000);
+
+console.log(car1.run());
+
+
+tut=28;
+
+
+
+</script > -->

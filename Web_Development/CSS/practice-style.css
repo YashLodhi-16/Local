@@ -1,0 +1,23 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(pink, salmon);
+    text-align: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.heading {
+    border:2px solid black;
+    padding: 1em;
+    background: linear-gradient(to right bottom, DarkViolet, white);
+}
+
+.para {
+    border:2px solid black;
+    padding: 1em;
+    background: linear-gradient(to right bottom, blue, lightblue);
+}
