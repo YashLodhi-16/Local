@@ -1,5 +1,5 @@
 <!-- author:yash,
-     version:1.0
+     version:2.0    
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteBook</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -50,29 +50,47 @@
 
     </nav>
 
-    <div class="parentcontainer" id="parentcontainer">
+    </div>
 
+    <div class="welcome" id="welcome">
+        <p class="welcomepara" id="welcomepara">Welcome To NoteBook</p>
+    </div>
+
+    <div class="parentcontainer" id="parentcontainer">
         <div class="textareacontainer" id="textareacontainer">
+            <div class="errorcontainer" id="errorcontainer">
+                <p class="error" id="error">*Please Fill All The Boxes.</p>
+            </div>
+            <div class="indentifiercontainer" id="indentifiercontainer">
+                <p class="indentifiercontainerpara">Add a Tittle</p> 
+            </div>
+            <input type="text" class="inputtittle textarea" id="inputtitle" placeholder="Add a Tittle">
+            <div class="indentifiercontainer" id="indentifiercontainer">
+                <p class="indentifiercontainerpara">Add a Note</p> 
+            </div>
             <textarea class="textarea" id="textarea" cols="30" rows="10" placeholder="Add a Note"></textarea>
         </div>
 
         <div class="btncontainer" id="btncontainer">
             <button class="addnotebtn" id="addnotebtn">Add Note</button>
-            <button class="addnotebtn" id="resetdata">Delete All Note</button>
+            <button class="addnotebtn" id="resetdata">Delete All Note</button> 
+        
+        
         </div>
 
     </div>
- 
+
     <hr class="pchr">
 
     <div class="indicatorbox" id="indicator">
         <p class="indicatorline" id="indicatorline">Your Note's</p>
+        <span class="byalogorithm" id="byalogorithm">*</span>
+        <p class="byalogorithm2" id="byalogorithm2">Please Add Some Note</p>
     </div>
 
-    <div class="noteshowcontainer" id="noteshowcontainer">
-
-    </div> 
+    <div class="noteshowcontainer" id="noteshowcontainer"></div>
 
 </body>
 <script src="script.js"></script>
+
 </html>

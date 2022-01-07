@@ -1,8 +1,8 @@
-
 fornonote();
 
 tochecklocalstorage();
-// responsive navbar
+
+//responsive navbar
 document.getElementById('hamburgerbtn').addEventListener('click', () => {
 
     let navbar = document.getElementById('navbar');
@@ -14,8 +14,7 @@ document.getElementById('hamburgerbtn').addEventListener('click', () => {
         navbar.style.height = 'auto';
 
         welcome.style.marginTop = "12em";
-    }
-    else {
+    } else {
 
         navbar.style.height = '44px';
 
@@ -24,7 +23,8 @@ document.getElementById('hamburgerbtn').addEventListener('click', () => {
     };
 
 });
-//search functionality
+
+// search function
 document.getElementById('inputbx').addEventListener('input', (e) => {
 
     allclasses = document.getElementsByClassName('card');
@@ -43,13 +43,11 @@ document.getElementById('inputbx').addEventListener('input', (e) => {
 
             efg.style.display = 'inline-block';
 
-        }
-        else if (inputtxt === '') {
+        } else if (inputtxt === '') {
 
             efg.style.display = 'inline-block';
 
-        }
-        else {
+        } else {
 
             efg.style.display = 'none';
 
@@ -60,36 +58,41 @@ document.getElementById('inputbx').addEventListener('input', (e) => {
     });
 
 });
-// to add note in local storage
+
+// addnote by index 
 document.getElementById('addnotebtn').addEventListener('click', () => {
 
     textarea = document.getElementById('textarea').value;
-    
+
     inputtitle = document.getElementById('inputtitle').value;
 
-    if (textarea==="" || inputtitle==="") {
-        
+    myarr = [];
+
+    myarr.push(inputtitle, textarea)
+
+    strarr = JSON.stringify(myarr);
+
+    if (textarea === "" || inputtitle === "") {
+
         errorcontainer = document.getElementById('errorcontainer');
-        
+
         errorcontainer.style.display = 'block';
-        
+
     } else {
 
         errorcontainer.style.display = 'none';
-        
-        localStorage.setItem(inputtitle,textarea );
-        
-        liveload2(textarea,inputtitle,mamba);
+
+        localStorage.setItem(mamba, strarr)
 
         document.getElementById('inputtitle').value = "";
-        
-        document.getElementById('textarea').value = "";
 
-        
-        };
+        document.getElementById('textarea').value = ""; 
+
+    };
 
 });
-// click event for deleting all data from localStorage
+
+// to delete all note
 document.getElementById('resetdata').addEventListener('click', () => {
 
     localStorage.clear();
@@ -97,35 +100,33 @@ document.getElementById('resetdata').addEventListener('click', () => {
     location.reload();
 
 });
-// to checking there are note available in localstorage or not
+
+//tocheckoldernotes by index
 function tochecklocalstorage() {
 
     if (localStorage.length != 0) {
 
         for (mamba = 0; mamba < localStorage.length; mamba++) {
 
-            jinna = localStorage.key(`${mamba}`);
-            
-            view = localStorage.getItem(`${jinna}`);
-            
+            view = JSON.parse(localStorage.getItem(mamba));
 
             if (view != null) {
 
                 let template = `
             
-            <div class="card" id="card-${mamba}">
+                    <div class="card" id="card-${mamba}">
            
-            <p class="noteindex" id="noteindex-${mamba}">${jinna}</p>
+                        <p class="noteindex" id="noteindex-${mamba}">${view[0]}</p>
             
-                <hr class="nschr">
+                        <hr class="nschr">
                
-                <p class="notecontent" id="notecontent-${mamba}">${view}</p>
+                        <p class="notecontent" id="notecontent-${mamba}">${view[1]}</p>
            
-                <div class="deletebtncontainer" id="deletebtncontainer-${mamba}">
+                        <div class="deletebtncontainer" id="deletebtncontainer-${mamba}">
                
-                    <button class="deletebutton" id="deletebutton-${mamba}" onclick="myfunction(this)">Delete Note</button>
+                            <button class="deletebutton" id="deletebutton-${mamba}" onclick="myfunction(this)">Delete Note</button>
                     
-                    </div>
+                        </div>
                     
                     </div>
                     
@@ -139,35 +140,44 @@ function tochecklocalstorage() {
     };
 
 };
-// live loading the note
-function liveload2(textareavalue, inputittlevalue,indexmamba) {
-   
-    let template3 = `
-   
-    <div class="card" id="card-${indexmamba}">
-   
-        <p class="noteindex" id="noteindex-${indexmamba}">${inputittlevalue}</p>
-   
-        <hr class="nschr">
-   
-        <p class="notecontent" id="notecontent-${indexmamba}">${textareavalue}</p>
-   
-        <div class="deletebtncontainer" id="deletebtncontainer-${indexmamba}">
-   
-            <button class="deletebutton" id="deletebutton-${indexmamba}" onclick="myfunction(this)">Delete Note</button>
-   
-        </div>
-   
-    </div>
-   
-      `;
-   
-    noteshowcontainer.innerHTML+= template3;
-   
-    mamba++;
 
-  }
-// to check there are note available or not 
+// noteshow by index
+// mamba = 0;
+setInterval(() => {
+    
+    view = JSON.parse(localStorage.getItem(mamba));
+
+    if (view != null) {
+
+        template = `
+
+            <div class="card" id="card-${mamba}">
+
+                <p class="noteindex" id="noteindex-${mamba}">${view[0]}</p>
+
+                <hr class="nschr">
+
+                <p class="notecontent" id="notecontent-${mamba}">${view[1]}</p>
+
+                <div class="deletebtncontainer" id="deletebtncontainer-${mamba}">
+
+                    <button class="deletebutton" id="deletebutton-${mamba}" onclick="myfunction(this)">Delete Note</button>
+
+                </div>
+
+            </div>
+
+            `;
+
+        noteshowcontainer.innerHTML += template;
+
+        mamba += 1;
+
+    };
+
+}, 1000);
+
+//to check is there a note
 function fornonote() {
 
     byalogorithm2 = document.getElementById('byalogorithm');
@@ -186,9 +196,7 @@ function fornonote() {
 
         mamba = 0;
 
-    }
-
-    else {
+    } else {
 
         byalogorithm.style.display = 'none';
 
@@ -197,32 +205,39 @@ function fornonote() {
         indicatorline.style.display = 'inline';
 
     };
+
 };
-//delete note function
+
+//Delete function by index
 function myfunction(params) {
+
+    newparams = params.id.slice(13);
+
+    localStorage.removeItem(newparams);
+
+    params.parentElement.parentElement.remove();
 
     kalluconda = [];
 
-    key = params.parentElement.parentElement.children[0].innerHTML;
+    for (let sama = 0; sama <= localStorage.length; sama++) {
 
-    rm = params.parentElement.parentElement;
+        kallusama = localStorage.getItem(sama);
 
-    for (let sama = 0; sama < localStorage.length; sama++) {
-
-        kallusama = localStorage.key(sama);
-
-        if (kallusama != null) { kalluconda.push(kallusama); };
-
-        if (key == kalluconda[sama]) {
-
-            localStorage.removeItem(kalluconda[sama]);
-
-            rm.remove();
-
-        };
+        if (kallusama != null || kallusama != undefined) { kalluconda.push(kallusama); };
 
     };
 
-    fornonote();
+    localStorage.clear();
 
+    for (masa = 0; masa < kalluconda.length; masa++) {
+
+        localStorage.setItem(masa, kalluconda[masa]);
+
+    }
+
+    Array.from(document.getElementsByClassName('card')).forEach((card) => { card.remove(); });
+
+    tochecklocalstorage();
+
+    fornonote();
 };
