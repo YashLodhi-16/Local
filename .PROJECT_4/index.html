@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quick Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="../Web_Development/IMG/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class=" height36 " id="navbar" style="height: 36px;">
+
+        <div class="webname" id="webname">
+            <span class="color-white library underline quickspan" id="quick">Quick Library</span>
+        </div>
+
+        <span class="hamburger b-radius border2px pointer" id="hamburger">
+                &equiv;
+        </span>
+
+        <div class="unlist " id="unlist">
+            <ul class="ulist quickspan" id="ul">
+                <li id="li" class="style-none litem"><a class="text-none color-white underline" href="index.html">Home</a></li>
+            </ul>
+        </div>
+
+        <div class=" ml-auto searchbox" id="searchbox">
+            <input id="searchbar" class="b-radius center border2px padx-1 height22 mx-1 outline-none" type="text" placeholder="Search">
+
+            <button id="searchbtnnav" class="b-radius center border2px pointer btnpady-1 padx-1 mx-1 searchbtn">search</button>
+        </div>
+
+    </nav>
+
+    <div class="resultcontainer m-auto center-center flex-column pady-1 " id="resultcontainer">
+        <span id="message0" class="none frem">Message: Your book Sucessfully Added.</span> 
+        <span id="message1" class="none frem">Message: Please Fill The Name box</span>
+        <span id="message2" class="none frem">Message: Please Fill The Author box</span>
+        <span id="message3" class="none frem">Message: Please Fill The Type box</span>
+    </div>
+
+    <div class="formcontainer m-auto center-center flex-column" id="formcontainer">
+        <span class="library2 universalspan">Quick Library</span>
+        <hr class="my-1 width80">
+        <div class="form width80" id="form">
+            <form>
+                <div class="namebox flex my-1 align-center padx-1" id="namebox">
+                    <label id="labelforname" for="name">Name</label>
+
+                    <input class="outline-none widthforinput ml-auto border2px b-radius padx-1 pady-1" type="text" id="name"
+                        placeholder="Name">
+                </div>
+
+                <div class="authorbox flex my-1 align-center padx-1" id="authorbox">
+                    <label id="labelforauthor" for="author">Author</label>
+
+                    <input class="outline-none widthforinput ml-auto border2px b-radius padx-1 pady-1" type="text" id="author"
+                        placeholder="Author">
+                </div>
+
+                <div class="flex my-1 padx-1">
+                    <div class="type " id="type">
+                        <span>Type</span>
+                    </div>
+
+                    <div class="radiocontainer widthforradio ml-auto">
+                        <div class="fictionbox flex" id="fictionbox">
+                            <input id="Fiction" type="radio" name="type">
+
+                            <label id="labelforfiction" for="Fiction">&nbspFiction</label>
+                        </div>
+
+                        <div class="cookingbox" id="cookingbox">
+                            <input id="Cooking" type="radio" name="type">
+
+                            <label id="labelforcooking" for="Cooking">Cooking</label>
+                        </div>
+
+                        <div class="programmingbox" id="programmingbox">
+                            <input id="Programming" type="radio" name="type">
+
+                            <label id="labelforprogramming" for="Programming">Programming</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="addbook my-1 padx-1" id="addbook">
+                    <button id="addbookbtn" class="padx-1 pady-1 border2px b-radius my-1 addbookbtn">Add Book</button>
+                    <button id="resetbtn" class="padx-1 pady-1 border2px b-radius my-1 resetbtn">Delete All Books</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="bookscontainer  m-auto center-center flex-column " id="bookscontainer">
+        <span class="library2 universalspan">Your Book's</span>
+        <hr class="line width80">
+        <div class="table center-center width80" id="table">
+            <table class="border-collapse maintable">
+                <thead>
+                    <tr>
+                        <th class="table-cells theadname" scope="col">Name</th>
+                        <th class="table-cells" scope="col">Author</th>
+                        <th class="table-cells" scope="col">Type</th>
+                        <th class="table-cells" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody" class="tablebody"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
+
+

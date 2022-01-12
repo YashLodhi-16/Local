@@ -1,0 +1,1 @@
+This project is about a library. People can take book from library and return it. I have made two js file because first one uses index for saving item in localstorage and second one uses name for saving item in localstorage. you can use any of them js file for you. sorry for css because i am using utility file for first time. hope you like the quick library.
