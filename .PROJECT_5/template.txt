@@ -1,0 +1,14 @@
+responsetxt.articles[1].content.slice(0,responsetxt.articles[1].content.indexOf('chars')-7)
+
+ <div class="newscontent" id="newscontent-0">
+                <div class="newscontenthead padx-1 pady-1" id="newscontenthead">
+                    <p class="inline bold newsindex">Breaking News 0:</p>
+                    <p class="inline newsheadline">Delhi: 5 dead, 11 injured after fire breaks out in building in zakir nagar</p>
+                </div>
+                <div class="newscontentbody padx-1 pady-1 none" id="newscontentbody">
+                    <p class="newsdesc" id="newsdesc">The tennis star will hear on Sunday whether he can stay in the country and compete unvaccinated.</p>
+                    <p class="newsurl flex justify-center padx-1" id="newsurl">
+                        <a class="text-none underline articleurl" href="https://www.bbc.com/news/world-australia-60004874">You can read the whole article here</a>
+                    </p>
+                </div>
+            </div>

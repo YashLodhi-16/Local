@@ -1299,6 +1299,580 @@ console.log(car1.run());
 
 tut=28;
 
+// function MyDetails(name, job, yearOfBirth){
 
+//     this.name = name;
+
+//     this.job = job;
+
+//     this.yearOfBirth = yearOfBirth;
+
+// }
+
+
+// // console.log(MyDetails.prototype);
+
+// function Student(){
+
+//     this.name = 'Yash';
+
+//     this.gender = 'Male';
+
+// }
+
+// Student.prototype.sayHi = function(){
+
+//     console.log('Hello World!');
+
+// };
+
+// let std = new Student();
+
+// std.toString();
+
+// tut=30;
+
+// const MyDetail= {
+
+//     isHuman: true,
+
+//     printIntro: function(){
+
+//         console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+
+//     }
+
+// };
+
+// const mySelf = Object.create(MyDetail);
+
+// mySelf.name = 'Yash';
+
+// mySelf.printIntro();
+
+// function Factory (name, location) {
+
+//     this.name = name;
+
+//     this.location = location;
+
+// }
+
+// function Food (name, location) {
+
+//     Factory.call(this, name, location);
+
+//     this.category = 'food';
+
+// }
+
+// const myFood = new Food('Nestle', 'Uk')
+
+// function Factory(){
+
+// }
+
+// Factory.prototype.FactoryMethod = function FactoryMethod(){}
+
+// function Product1() {
+
+//     Factory.call(this)
+
+// }
+
+// Product1.prototype.constructor = Product1;
+
+// tut=31;
+
+// class SimpleDate {
+
+//     constructor(year, month, day){
+
+//         this._year = year;
+
+//         this._month = month;
+
+//         this._day = day;
+
+//     }
+
+//     addMonth(nMonths){
+
+//     }
+
+//     getMonth(){
+        
+//         return this.month;
+        
+//     }
+
+// }
+
+// class Car {
+
+//     constructor(name, year) {
+
+//         this.name = name;
+
+//         this.year = year;
+
+//     }
+
+//     greet() {
+
+//         return `${this.name} says hello.`
+
+//     }
+// }
+
+// const car1 = new Car('Audi', 2018);
+
+// class Bike extends Car {
+
+//     constructor(name, year, speed){
+
+//         super(name, year);
+
+//         this.speed = speed;
+
+//     }
+
+// }
+
+// const bike1 = new Bike('Trek', 2019, 200);
+
+tut=32;
+
+
+let Books = [
+  'ULYSSES',
+  'THE GREAT GATSBY',
+  'LOLITA',
+  'BRAVE NEW WORLD',
+  'CATCH-22',
+  '1984',
+  'INVISIBLE MAN',
+  'NATIVE SON',
+  'ANIMAL FARM',
+  'THE GOLDEN BOWL'
+];
+
+function library(Books){
+
+    this._Books = Books;
+
+    this.name = 'Books';
+    
+}
+
+library.prototype.getBookList = function(){
+    
+    if(localStorage.getItem('Books')){
+        
+        return JSON.parse(localStorage.getItem(this.name));
+        
+    }
+    else{
+        
+        localStorage.setItem(this.name,JSON.stringify(this._Books));
+        
+        return JSON.parse(localStorage.getItem(this.name));
+
+    }
+
+}
+
+library.prototype.issueBook = function(bookname, user){
+
+    let _bookname = bookname;
+
+    let _user = user;
+
+    if(this._Books.includes(_bookname)){
+        
+        localStorage.setItem(_bookname, _user);
+
+        let removeIndex = this._Books.indexOf(_bookname);
+
+        this._Books.splice(removeIndex,1)
+
+        localStorage.setItem(this.name,JSON.stringify(this._Books));
+
+        return `${_user} your book ${_bookname} has been issued`;
+        
+    }
+    else{ return `Sorry, ${_user} the book ${_bookname} is not available in the library`; }
+
+}
+
+library.prototype.returnBook = function(bookname){
+
+    let _bookname = bookname;
+
+    parse = JSON.parse(localStorage.getItem(this.name));
+
+    parse.push(_bookname);
+
+    this._Books.push(_bookname);
+
+    localStorage.removeItem(_bookname)
+
+    localStorage.setItem(this.name, JSON.stringify(parse));
+
+}
+
+let yash = new library(Books);
+
+yash.getBookList();
+
+// tut=34;
+
+// setTimeout(() => {
+
+//     for (let index = 0; index < 1000; index++) {
+
+//                console.log('this is index number ' + index);
+
+//     }
+
+// }, 2000);
+
+
+// tut=35;
+
+// let templateliteral = `
+// <button id="fetchbtn">Fetch Button</button>
+// <button id="backupbtn">Backup Button</button> `;
+
+// document.body.innerHTML += templateliteral;
+
+// let fetchbtn = document.getElementById('fetchbtn');
+
+// fetchbtn.addEventListener('click', buttonClickHandler)
+
+// function buttonClickHandler(){
+
+//     console.log('You have clicked the fetchBtn');
+     
+//     const xhr = new XMLHttpRequest();
+ 
+    // xhr.open("GET","https://jsonplaceholder.typicode.com/todos/1", true);
+    // xhr.open("POST",'http://dummy.restapiexample.com/api/v1/create', true);
+    // xhr.getResponseHeader('Content-type','json');
+
+    // xhr.onprogress = function(){
+
+    //     console.log('On progress');
+
+    // };
+
+    // xhr.onreadystatechange = function(){
+
+    //     console.log(('ready state is ',xhr.readyState));
+
+    // };
+
+    // xhr.onload = function(){
+
+    //     console.log(this.responseText);
+
+    //     if(this.status === 200){
+
+    //         console.log(this.responseText);
+
+    //     }
+
+    //     else{
+
+    //         console.log('Some error occured');
+
+    //     };
+
+    // };
+    
+    // params = `{"name2":"jhonnsfafssafaytest","salasfasfsfadry":"12sfsfs3","age":"23sfdsfas"}`;
+
+    // xhr.send(params);
+
+// };
+
+
+// let backupbtn = document.getElementById('backupbtn');
+
+// backupbtn.addEventListener('click', backupevent);
+
+// function backupevent(){
+
+//     console.log('You have clicked on backup button');
+
+//     let xhr = new XMLHttpRequest();
+
+//     xhr.open('GET','https://jsonplaceholder.typicode.com/posts', true);
+
+//     xhr.onload = function(){ 
+
+//         if(this.status === 200){
+
+//             let para = document.getElementById('para');
+
+//             para.innerHTML = '';
+
+//             json = JSON.parse(this.responseText);
+
+//             json.forEach(function(e){
+ 
+//                 para.innerHTML += `${e.title} </br>`;
+
+//               });
+
+//         }
+//         else{
+//             console.error('Some error occured');
+//         }
+//     }
+
+//     xhr.send();
+
+// };
+
+// tut=37;
+
+// function myMessage(){
+
+//     setTimeout(() => {
+
+//         console.log(`Code With Harry`);
+
+//     }, 5000);
+
+// }
+
+// myMessage();
+
+// function addition(x, y, callback){
+
+//     setTimeout(() => {
+
+//         document.write(`The sum of ${x} and ${y} is ${x+y}.`);
+
+//         callback();
+
+//     }, 5000);
+
+// }
+
+//     function display(){
+
+//         document.write(' Numbers added!');
+
+//     };
+
+// addition(10, 3, display);
+
+// const students = [
+//     {name: "Yash", subject: "JavaScript"},
+//     {name: "KalluSama", subject: "Machine Learning"}
+// ];
+
+// function enrollStudent(student, callback){
+    
+//     setTimeout(function(){
+
+//         students.push(student);
+
+//         console.log("Student has been enrolled");
+
+//         callback();
+
+//     }, 1000);
+
+// };
+
+// function getStudents(){
+
+//     setTimeout(() => {
+        
+//         let str = "";
+
+//         students.forEach(function(student){
+
+//             str += `<li>${student.name}</li>`;
+
+//         });
+
+//         document.getElementById('para').innerHTML = str;
+
+//         console.log("Students have been fetched");
+
+//     }, 5000);
+
+// };
+
+// let newStudent = {name:"Sunny", subject:"Python"};
+
+// enrollStudent(newStudent, getStudents);
+
+tut=39;
+
+// var promise = new Promise(function(resolve,reject){
+    
+//     const x = "geeksforgeeks";
+
+//     const y = "geeksforgeeks";
+
+//     if(x === y){
+    
+//         resolve();
+
+//     }else{
+    
+//         reject();
+
+//     };
+
+// });
+
+// promise.then(function(){
+
+//     console.log('Success, You are a GEEk');
+
+// }).catch(function(){
+
+//     console.log('Some error has occurred');
+
+// });
+
+// function func1(){
+
+//     return new Promise(function(resolve, reject){
+
+//         setTimeout(() => {
+            
+//             const error = true;
+
+//             if(!error){
+
+//                 console.log('Function: Your promise has been resolved');
+
+//                 resolve();
+
+//             }
+//             else{
+
+//                 console.log('Function: Your promise has not been resolved ');
+
+//                 reject('Sorry not fulfilled');
+
+//             };
+
+//         }, 2000);
+
+//     });
+
+// };
+
+// func1().then(function(){
+
+//     console.log("Yash: Thanks for resolving");
+
+// }).catch(function(error){
+
+//     console.log("Yash: Very bad bro. Reason: " + error);
+
+// });
+
+const students = [
+    {name: "Yash", subject: "JavaScript"},
+    {name: "KalluSama", subject: "Machine Learning"}
+];
+
+function enrollStudent(student){
+
+    return new Promise(function(resolve, reject){
+
+        setTimeout(() => {
+            
+            students.push(student);
+
+            console.log("Student has been enrolled");
+
+            const error = false;
+
+            if (!error) {
+                
+                resolve();
+
+            } else {
+                
+                reject();
+
+            };
+
+        }, 1000);
+    });
+
+};
+
+function getStudents(){
+
+    setTimeout(() => {
+        
+        let str = "";
+
+        students.forEach(function(student){
+
+            str += `<p>${student.name}</p>`;
+
+        });
+
+        document.getElementById('para').innerHTML = str;
+
+        console.log(("Students have been fetched"));
+
+    }, 5000);
+
+};
+
+let newStudent = {name: "Sunny", subject: "Python"};
+
+enrollStudent(newStudent).then(getStudents).catch(function (){
+
+    console.log("Some error occured");
+
+})
+
+tut=41;
+
+// regular function 
+
+let yash = function(){
+
+    console.log("This is the best person ever");
+
+}
+
+yash = ()=>{
+
+    console.log("This is the best person ever");
+
+}
+
+// function for greeting 
+
+let greet = function(){
+
+    return "Good Morning";
+
+}
+
+// one line greet func  
+
+greet = ()=> "Good Morning";
+
+greet = ()=> ({name: "yash"});
+
+greet = name => "Good Morning " + name;
+
+console.log(greet("yash"));
 
 </script > -->

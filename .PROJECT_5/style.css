@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --background-color:#343a40;
+}
+
+.navbar{
+    background-color: var(--background-color);
+    width: 98% !important;
+    padding: 8px;
+}
+
+.titlename{
+    font-size: 1.3rem;
+}
+
+.hamburgerbox{
+    display: none;
+}
+
+.unlist{
+    margin-top: 4px;
+}
+
+.searchbtn{
+    padding: 0px 5px;
+}
+
+.contentbox{
+    margin-top: 55px;
+}
+
+.contenthighlightedtext{
+    background-color: #e3d87e45;
+}
+
+.newscontenthead{
+    background-color: aliceblue;
+}
+
+.newsindex{
+    color: #14aede;
+}
+
+.newsheadline{
+    color: #004c64;
+}
+
+.newscontentbody{
+    background-color: gainsboro;
+}
+
+.articleurl{
+    color: blueviolet;
+}
+
+@media only screen and (max-width:768px){
+
+    .navbar{
+        display: block !important;
+        height: 22px;
+    }
+
+    .title{
+        margin: 0% 0% 2% 0% !important;
+    }
+
+    .hamburgerbox{
+        display: block;
+        top: 0px;
+        right: 11px;
+        font-size: 2rem;
+    }
+
+    .unlist{
+        margin: 2% 0px !important;
+    }
+
+    .searchbox{
+        margin: 2% 0px !important;
+    }
+
+    .searchbox div{
+        margin:0px 1% !important;
+    }
+
+}

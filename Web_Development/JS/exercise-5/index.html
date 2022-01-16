@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Dictionary</title>
+
+    <style>
+    .block{
+        display: block !important;
+    }
+
+    .none{
+        display: none;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4 px-4 py-4 border">
+
+        <form>
+            <div id="error" class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter a word.</label>
+                <input type="email" id="input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Hello">
+
+            </div>
+            <button type="submit" id="fetchbtn" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div id="frontContainer" class="container px-4 py-4 border none">
+
+        <ul class="ulist">
+            <li id="li0"></li>
+            <li id="li1"></li>
+            <li id="li2"></li>
+        </ul>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+<script>
+
+    document.getElementById('input').value = "";
+
+    let fetchbtn = document.getElementById('fetchbtn');
+
+    fetchbtn.addEventListener('click', function (e) {
+        input = document.getElementById('input').value;
+
+        e.preventDefault();
+
+
+        if (input != "" && input != " ") {
+
+            let errormesg = document.getElementById('errormesg');
+
+            if (errormesg != null) {
+
+                errormesg.remove();
+
+            }
+
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', `https://api.dictionaryapi.dev/api/v2/entries/en/${input}`, true);
+
+            xhr.onload = function () {
+
+                if (this.status === 200) {
+
+                    status404 = document.getElementById('status404')
+                    if(status404 != null){
+                        status404.remove();
+                    }
+
+                    restext = JSON.parse(xhr.responseText);
+
+                    if (restext != null) {
+
+                        populate = function () {
+                            index0 = 0;
+                            frontContainer = document.getElementById('frontContainer');
+                            frontContainer.classList.add('block')
+                            li0 = document.getElementById('li0');
+                            li1 = document.getElementById('li1');
+                            li2 = document.getElementById('li2');
+                            li0.innerHTML = "";
+                            li1.innerHTML = "";
+                            li2.innerHTML = "";
+                            let partOfSpeech = "Part of Speech: ";
+                            let definitions = "Definitions: "
+                            let example = "Example: "
+                            li0.append(partOfSpeech);
+                            li1.append(definitions);
+                            li2.append(example);
+                            for (let index = 0; index < restext[0].meanings.length; index++) {
+                                const element = restext[0].meanings[index];
+                                if (index0 < restext[0].meanings[index].definitions.length) {
+                                    const element2 = restext[0].meanings[index].definitions[index0];
+                                    li0.append(element.partOfSpeech + ", ")
+                                    li1.append(element2.definition + ", ")
+                                    li2.append(element2.example + ", ")
+                                }
+                            }
+
+                        }
+                        populate();
+                        document.getElementById('input').value = '';
+
+                    } else {
+                        console.log('second else');
+
+                    }
+
+                } else {
+
+                    errorContainer = document.getElementById('error');
+                    
+                    status404 = `
+
+                    <div id="status404" class="alert alert-info text-center py-1 my-1"  role="alert">
+                     Sorry we don't have this word in dictionary.
+                     </div>
+                    `
+
+                     errorContainer.innerHTML += status404;
+
+                     setTimeout(() => {
+                         document.getElementById('status404').remove();
+                     }, 5000);
+
+                     document.getElementById('input').value = '';
+
+                }
+
+            }
+
+            xhr.send();
+
+        } else {
+            errorContainer = document.getElementById('error');
+
+            error = `
+                <div id="errormesg" class="alert-danger text-center py-1 my-1" role="alert">
+                    Please write something!
+                </div>
+                `;
+
+            errorContainer.innerHTML += error;
+
+            setTimeout(() => {
+
+                let errormesg = document.getElementById('errormesg');
+
+                errormesg.remove();
+
+            }, 5000);
+
+        }
+
+    });
+
+
+
+</script>
+
+</html>

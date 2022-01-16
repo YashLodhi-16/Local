@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Top News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="../Web_Development/IMG/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div id="navbarbox" class="navbarbox">
+        <nav class="navbar flex align-center fixed-nav over-hidden" id="navbar" style="height: 22px;">
+
+        
+        <div id="title" class="title mx-1 flex justify-center">
+            <span id="titlename" class="titlename"><a id="link" class="link text-none color-white" href="index.html">Top News</a></span>
+        </div>
+
+        <div class="hamburgerbox absolute color-white" id="hamburgerbox">
+            <span class="hamburger" id="hamburger">&equiv;</span>
+        </div>
+
+        <div class="unlist mx-1 flex justify-center" id="unlist">
+            <ul class="unorderedlist" id="unorderedlist">
+                <li class="listitem list-none" id="listitem"><a id="link" class="link text-none color-white" href="index.html">Home</a></li>
+            </ul>
+        </div>
+
+        <div class="searchbox flex ml-auto mx-1 justify-center" id="searchbox">
+            <div class="searchbarbox mx-2" id="searchbarbox">
+                <input id="searchbar" class="searchbar border2px b-radius padx-2 pady-2 height22 center" type="text" placeholder="Search">
+            </div>
+
+            <div class="searchbtnbox flex mx-2" id="searchbtnbox">
+                <input id="searchbtn" class="searchbtn border2px b-radius" type="button" value="Search">
+            </div>
+        </div>
+
+    </nav>
+    </div>
+
+    <div class="contentbox" id="contentbox">
+        <div class="contenttitle width-70 m-auto titlename" id="contenttitle">
+            <span class="contenttext bold" id="contenttext">Best Headline's</span>
+            <span class="contenthighlightedtext" id="contenthighlightedtext">By Top News</span>    
+        </div>
+        <hr class="my-1 width-70 m-auto">
+        <div class="newscontentbox m-auto width-70" id="newscontentbox">
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
