@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: linear-gradient(lightblue,blue,red);
+}
+
+.sumbitErrorContainer span{
+    margin-left: 5%;
+}
+
+.sumbitFailure{
+    text-shadow: 1px 1px red;
+    background: linear-gradient(lightblue,coral,wheat);
+}
+
+.sumbitSucess{
+    text-shadow: 1px 1px aqua;
+    background: linear-gradient(lightblue,lime,palegreen)
+}
+
+.form{
+    margin-right: 5%;
+}
+
+.title{
+    font-size: 1.7rem;
+}
+
+.horizontalLine{
+    width: 104.5%;
+    border: 1px solid black;
+    background-color: black;
+    margin-top: 5px;
+}
+
+.select{
+    width: 104.5%;
+}
+
+.address{
+    height: 100px;
+}
+
+.message{
+    height: 100px;    
+}
+
+.sumbit{
+    color: purple;
+    background-color: azure;
+}
+
+.sumbit:hover{
+    padding: 1.5%;
+}
+
+@media only screen and (max-width:672px){
+    .my-1{
+        margin-top: 2% !important;
+        margin-bottom: 2% !important;
+    }
+
+    .my-2{
+        margin-top: 4% !important;
+        margin-bottom: 4% !important;
+    }
+
+    .pady-2{
+        padding-top: 4% !important;
+        padding-bottom: 4% !important;
+    }
+
+    .padx-1{
+        padding: 1.5% !important;
+    }
+
+    .sumbit:hover{
+        padding:2% !important;
+    }
+
+    .email, .name, .number, .message, .address{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .padx-1{
+        padding: 2% !important;
+    }
+    
+    .sumbit:hover{
+        padding:3% !important;
+    }
+
+    .email, .name, .number, .message, .address{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .sumbitSucess{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .sumbitFailure{
+        text-align: center;
+    }
+
+    .errorForName, .errorForEmail, .errorForNumber{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width:340px){
+    .title{
+        font-size:1.4rem;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .title{
+        font-size: 1.2rem;
+    }
+
+    .errorForName, .errorForEmail, .errorForNumber{
+        font-size: 0.8rem;
+    }
+
+    .labelForName, .labelForEmail, .labelForNumber, .labelForAddress, .labelForSelect, .labelForMessage{
+        font-size: 0.9rem;
+    }
+}

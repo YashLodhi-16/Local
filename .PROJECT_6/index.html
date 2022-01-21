@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mysterious Travel's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="../Web_Development/IMG/favicon.png" type="image/x-icon">
+</head>
+
+<body class="attachment-fixed">
+    <div class="sumbitErrorContainer flex justify-center align-center flex-column" id="sumbitErrorContainer">
+        <span id="sumbitSucess" class="sumbitSucess border2px b-radius padx-2 pady-2 width80 attachment-fixed none">Sucess: Your form has been sumbitted.</span>
+        <span id="sumbitFailure" class="sumbitFailure border2px b-radius padx-2 pady-2 width80 attachment-fixed none">Failure: Please try again.</span>
+    </div>
+
+    <div class="formContainer width80 m-auto" id="formContainer">
+        <div class="titleContainer my-2" id="titleContainer">
+            <p class="title" id="title">Mysterious Travel's</p>
+            <hr class="horizontalLine">
+        </div>
+
+        <div class="formbox" id="formbox">
+            <form class="form" id="form">
+                <div class="userNameContainer my-2" id="userNameContainer">
+                    <div class="nameIdentifierContainer my-1" id="nameIdentifierContainer">
+                        <label class="labelForName" id="labelForName" for="name">Enter your name</label>
+                    </div>
+
+                    <div class="nameInput my-1" id="nameInput">
+                        <input class="name border2px b-radius padx-2 pady-2 width-100 outline-none outline" id="name"
+                            type="text" placeholder="yash">
+                    </div>
+
+                    <div class="nameErrorContainer none" id="nameErrorContainer">
+                        <p class="errorForName" id="errorForName">Please Enter a name between 2-20 alphanumeriac character's.</p>
+                    </div>
+                </div>
+
+                <div class="emailAddressContainer my-2" id="emailAddressContainer">
+                    <div class="emailIdentifierContainer my-1" id="emailIdentifierContainer">
+                        <label class="labelForEmail" id="labelForEmail" for="email">Enter your email address</label>
+                    </div>
+
+                    <div class="emailInpuit my-1" id="emailInput">
+                        <input type="text" class="email border2px b-radius padx-2 pady-2 width-100 outline-none outline"
+                            id="email" placeholder="email@email.com">
+                    </div>
+
+                    <div class="emailErrorContainer none" id="emailErrorContainer">
+                        <p class="errorForEmail" id="errorForEmail">Please Enter a valid email.</p>
+                    </div>
+                </div>
+
+                <div class="carContainer my-2" id="carContainer">
+                    <div class="selectIdentifierContainer my-1" id="selectIdentifierContainer">
+                        <label class="labelForSelect" id="labelForSelect" for="select">Select your car</label>
+                    </div>
+
+                    <div class="selectInput my-1" id="selectInput">
+                        <select id="select" class="select border2px b-radius padx-2 pady-2 outline-none outline">
+                            <option value="Skoda Rapid">Skoda Rapid</option>
+                            <option value="Honda City 4th Gen">Honda City 4th Gen</option>
+                            <option value="Hyundai Verna">Hyundai Verna</option>
+                            <option value="Tata Tigor">Tata Tigor</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="addressContainer my-2" id="addressContainer">
+                    <div class="addressIdentifierContainer my-1" id="addressIdentifierContainer">
+                        <label class="labelForAddress" id="labelForAddress" for="address">Enter your address</label>
+                    </div>
+
+                    <div class="addressInput my-1" id="addressInput">
+                        <textarea class="address border2px b-radius padx-2 pady-2 width-100 outline-none outline"
+                            id="address" placeholder="Mars"></textarea>
+                    </div>
+
+                    <div class="addressErrorContainer none" id="addressErrorContainer">
+                        <p>Please Enter a valid address.</p>
+                    </div>
+                </div>
+
+                <div class="numberContainer my-2" id="numberContainer">
+                    <div class="numberIdentifierContainer my-1" id="numberIdentifierContainer">
+                        <label class="labelForNumber" id="labelForNumber" for="number">Enter your phone number</label>
+                    </div>
+
+                    <div class="numberInput my-1" id="numberInput">
+                        <input id="number"
+                            class="number border2px b-radius padx-2 pady-2 width-100 outline-none outline" type="text"
+                            placeholder="0000000000">
+                    </div>
+
+                    <div class="numberErrorContainer none" id="numberErrorContainer">
+                        <p class="errorForNumber" id="errorForNumber">Please Enter a 10 digit phone number only.</p>
+                    </div>
+                </div>
+
+                <div class="messageContainer my-2" id="messageContainer">
+                    <div class="messageIdentifierContainer my-1" id="messageIdentifierContainer">
+                        <label class="labelForMessage" class="labelForMessage" id="labelForMessage" for="message">Any other message</label>
+                    </div>
+                    <div class="messageInput my-1" id="messageInput">
+                        <textarea class="message border2px b-radius padx-2 pady-2 width-100 outline-none outline"
+                            id="message" placeholder="hi!"></textarea>
+                    </div>
+                </div>
+
+                <div class="buttonContainer my-2" id="buttonContainer">
+                    <input id="sumbit" class="sumbit border2px b-radius padx-1 pady-1 my-1 outline-none outline pointer"
+                        type="button" value="Sumbit" onclick="sumbitForm()">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
