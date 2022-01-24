@@ -1,0 +1,56 @@
+body{
+    background: linear-gradient(lightgray,lightskyblue,blueviolet);
+}
+
+.start{
+    background-color: hotpink;
+}
+
+.end{
+    background-color: hotpink;
+}
+
+.title{
+    font-size: xx-large;
+}
+
+.candidatePhoto{
+    width:30%;
+}
+
+.next{
+    background: radial-gradient(lightgreen,darkgreen)
+}
+
+.next:hover{
+    background: radial-gradient(darkgreen,lightgreen)
+}
+
+.previous{
+    background: radial-gradient(lightskyblue,blue)
+}
+
+.previous:hover{
+    background: radial-gradient(blue,lightskyblue)
+}
+
+@media only screen and (max-width:525px){
+    .title{
+        font-size: x-large;
+    }
+}
+@media only screen and (max-width:390px){
+    .title{
+        font-size: large;
+    }
+
+    .resultContainer{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width:250px){
+    .dataContainer{
+        font-size: small;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to CV Screener</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="../Web_Development/IMG/favicon.png" type="image/x-icon">
+</head>
+<body class="attachment-fixed">
+    <div class="mainContainer my-2 width80 m-auto center" id="mainContainer">
+        <hr>
+        <div class="resultContainer my-2" id="resultContainer">
+            <p class="start border2px b-radius padx-2 pady-2 none" id="start">The List of the Candidate is Ended. If you click on <span class="nextSpan bold">next button</span> First CV will appear</p>
+            <p class="end border2px b-radius padx-2 pady-2 none" id="end">The List of the Candidate is Ended. If you click on <span class="previousSpan bold">previous button</span> the Last CV will appear</p>
+        </div>
+        <div class="titleContainer" id="titleContainer">
+            <p class="title bold" id="title">Candidate Applications for Data Scientist Job</p>
+        </div>
+        <div class="imageContainer my-2" id="imageContainer">
+            <img id="candidatePhoto" class="candidatePhoto border2px b-radius" src="../Web_Development/IMG/logo.jpg" alt="Candidate Photo">
+        </div>
+        <div class="dataContainer" id="dataContainer">
+            <ul>
+                <li id="name" class="list-none border2px pady-2 b-radius my-1" ></li>
+                <li id="age" class="list-none border2px pady-2 b-radius my-1" ></li>
+                <li id="city" class="list-none border2px pady-2 b-radius my-1" ></li>
+                <li id="language" class="list-none border2px pady-2 b-radius my-1" ></li>
+                <li id="framework" class="list-none border2px pady-2 b-radius my-1" ></li>
+            </ul>
+        </div>
+        <div class="buttonContainer my-2 flex justify-between" id="buttonContainer">
+            <button class="previous pady-2 padx-2 border2px b-radius color-white pointer shadow-black-1px" id="previous">Previous</button>
+            <button class="next pady-2 padx-2 border2px b-radius color-white pointer shadow-black-1px" id="next">Next</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

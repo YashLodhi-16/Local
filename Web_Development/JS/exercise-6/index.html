@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Alarm</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: linear-gradient(lightgoldenrodyellow, yellow, gold, goldenrod);
+            background-attachment: fixed;
+        }
+
+        .result {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .errorMessage {
+            display: none;
+            padding: 16px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: tomato;
+            width: 60%;
+            text-align: center;
+        }
+
+        .successMessage {
+            display: none;
+            padding: 16px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: lawngreen;
+            width: 60%;
+            text-align: center;
+        }
+
+        .newAlarmContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .newAlarmContainer h1 {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+        .margin-top-16 {
+            margin-top: 16px;
+        }
+
+        .newAlarmContainer input {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 16px;
+            margin-top: 16px;
+            outline: bisque ridge;
+        }
+
+        .newAlarmContainer input::placeholder {
+            color: black;
+            opacity: 100%;
+        }
+
+        label {
+            font-size: 1.3rem;
+        }
+
+        select {
+            font-size: 1rem;
+            border: 2px Solid black;
+            border-radius: 5px;
+            background-color: khaki;
+        }
+
+        .setAlarm {
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: khaki;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .setAlarm:hover {
+            background-color: rgb(228, 218, 127);
+        }
+
+        .alarmContainer {
+            display: none;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .alarmTimeContainer {
+            font-size: 1.1rem;
+            padding: 8px;
+        }
+
+        .alarmContainer h2 {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="result" id="result">
+        <span class="errorMessage" id="errorMessage">Failure, Alarm not setted.</span>
+        <span class="successMessage" id="successMessage">Success, Alarm has setted.</span>
+    </div>
+    <div class="newAlarmContainer" id="newAlarmContainer">
+        <h1 class="margin-top-16">New Alarm</h1>
+        <div class="hours margin-top-16" id="hours">
+            <label for="hoursSelection">Hours</label>
+            <select id="hoursSelection"></select>
+        </div>
+        <div class="minutes margin-top-16" id="minutes">
+            <label for="minutesSelection">Minutes</label>
+            <select id="minutesSelection"></select>
+        </div>
+        <div class="seconds margin-top-16" id="seconds">
+            <label for="secondsSelection">seconds</label>
+            <select id="secondsSelection"></select>
+        </div>
+        <button id="setAlarm" class="setAlarm margin-top-16" onclick="setAlarm()">Set Alarm</button>
+    </div>
+    <div class="alarmContainer margin-top-16" id="alarmContainer">
+        <h2>Your Alarm</h2>
+        <div class="alarmTimeContainer" id="alarmTimeContainer">
+            <span id="timeDone">Time Remaining</span>
+            <span id="alarmTime"></span>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
