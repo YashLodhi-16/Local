@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Post Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="../Web_Development/IMG/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="navbarbox" class="navbarbox">
+        <nav class="navbar flex align-center fixed-nav over-hidden" id="navbar" style="height: 22px;">
+
+
+            <div id="title" class="title mx-1 flex justify-center">
+                <span id="titlename" class="titlename"><a id="link" class="link text-none color-white"
+                        href="index.html">Post Master</a></span>
+            </div>
+
+            <div class="hamburgerbox absolute color-white pointer" id="hamburgerbox">
+                <span class="hamburger" id="hamburger">&equiv;</span>
+            </div>
+
+            <div class="unlist mx-1 flex justify-center" id="unlist">
+                <ul class="unorderedlist" id="unorderedlist">
+                    <li class="listitem list-none" id="listitem"><a id="link" class="link text-none color-white"
+                            href="index.html">Home</a></li>
+                </ul>
+            </div>
+
+            <div class="searchbox flex ml-auto mx-1 justify-center" id="searchbox">
+                <div class="searchbarbox mx-2" id="searchbarbox">
+                    <input id="searchbar" class="searchbar border2px b-radius padx-2 pady-2 height22 center" type="text"
+                        placeholder="Search">
+                </div>
+
+                <div class="searchbtnbox flex mx-2" id="searchbtnbox">
+                    <input id="searchbtn" class="searchbtn border2px b-radius" type="button" value="Search">
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="contentbox width80 m-auto padx-2 pady-2" id="contentbox">
+        <div class="titleContainer" id="titleContainer">
+            <p class="contentTitle inline" id="contentTitle">Post Master</p>
+            <p class="error none fontrem-1 color-red inline" id="error">Please Fill All Boxes</p>
+        </div>
+
+        <div class="urlContainer flex my-2" id="urlContainer">
+            <div class="labelForUrlContainer center-center" id="labelForUrlContainer">
+                <label for="url">URL</label>
+            </div>
+
+            <div class="urlInputContainer width-100  ml-auto" id="urlInputContainer">
+                <input class="url ml-auto mx-1 block padx-2 pady-2 border2px b-radius outline-none" type="text" id="url"
+                    placeholder="Enter URL here">
+            </div>
+        </div>
+
+        <div class="mainRequestTypeContainer flex my-2" id="mainRequestTypeContainer">
+            <div class="labelForRequestTypeRadioContainer inline" id="labelForRequestTypeRadioContainer">
+                <label for="requestTypeRadioGetMethodInput">Request Type</label>
+            </div>
+
+            <div class="requestTypeRadioContainer ml-auto align" id="requestTypeRadioContainer">
+                <div class="requestTypeRadioGetMethodContainer inline-flex" id="requestTypeRadioGetMethodContainer">
+                    <div class="requestTypeRadioGetMethodInputContainer" id="requestTypeRadioGetMethodInputContainer">
+                        <input type="radio" name="requestTypeRadioInput" id="requestTypeRadioGetMethodInput">
+                    </div>
+                    <div class="labelForRequestTypeRadioGetMethodContainer"
+                        id="labelForRequestTypeRadioGetMethodContainer">
+                        <label for="requestTypeRadioGetMethodInput" class="labelForRequestTypeRadioGetMethod mx-10"
+                            id="labelForRequestTypeRadioGetMethod">GET</label>
+                    </div>
+
+                </div>
+
+                <div class="requestTypeRadioPostMethodContainer flex" id="requestTypeRadioPostMethodContainer">
+                    <div class="requesteTypePostMethodInputContainer" id="requesteTypePostMethodInputContainer">
+                        <input type="radio" name="requestTypeRadioInput" id="requestTypeRadioPostMethodInput"
+                            class="requestTypeRadioPostMethodInput">
+                    </div>
+
+                    <div class="labelForRequestTypeRadioPostMethodContainer"
+                        id="labelForRequestTypeRadioPostMethodContainer">
+                        <label for="requestTypeRadioPostMethodInput" class="labelForRequestTypeRadioPostMethod mx-10"
+                            id="labelForRequestTypeRadioPostMethod">POST</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainContentTypeContainer flex my-2" id="mainContentTypeContainer">
+            <div class="labelForContentTypeRadioContainer" id="labelForContentTypeRadioContainer">
+                <label for="contentTypeRadioJsonInput">Content Type</label>
+            </div>
+
+            <div class="contentTypeRadioContainer ml-auto align" id="contentTypeRadioContainer">
+                <div class="contentTypeRadioJsonContainer inline-flex" id="contentTypeRadioJsonContainer">
+                    <div class="contentTypeRadioJsonInputContainer" id="contentTypeRadioJsonInputContainer">
+                        <input name="contentTypeRadioInput" type="radio" id="contentTypeRadioJsonInput"
+                            class="contentTypeRadioJsonInput">
+                    </div>
+
+                    <div class="labelForContentTypeRadioJsonContainer mx-10" id="labelForContentTypeRadioJsonContainer">
+                        <label for="contentTypeRadioJsonInput" class="labelForContentTypeRadioJsonInput"
+                            id="labelForContentTypeRadioJsonInput">JSON</label>
+                    </div>
+                </div>
+                <div class="contentTypeRadioCustomContainer flex" id="contentTypeRadioCustomContainer">
+                    <div class="contentTypeRadioCustomInputContainer" id="contentTypeRadioCustomInputContainer">
+                        <input name="contentTypeRadioInput" type="radio" id="contentTypeRadioCustomInput"
+                            class="contentTypeRadioCustomInput">
+                    </div>
+
+                    <div class="labelForContentTypeRadioCustomContainer mx-1"
+                        id="labelForContentTypeRadioCustomContainer">
+                        <label for="contentTypeRadioCustomInput" class="labelForContentTypeRadioCustomInput"
+                            id="labelForContentTypeRadioCustomInput">Custom Parameter</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainResquestDataContainer" id="mainResquestDataContainer">
+            <div class="requestDataJsonContainer flex my-2" id="requestDataJsonContainer">
+                <div class="labelForRequestDataJsonContainer padx-1" id="labelForRequestDataJsonContainer">
+                    <label for="requestDataJsonInput">Enter Request Json</label>
+                </div>
+                <div class="requestDataJsonInputContainer align ml-auto" id="requestDataJsonInputContainer">
+                    <textarea id="requestDataJsonInput"
+                        class="requestDataJsonInput border2px b-radius outline-none pady-2 padx-2" placeholder='{ "Name":"Yash" }'></textarea>
+                </div>
+            </div>
+
+            <div class="requestDataCustomContainer none my-2" id="requestDataCustomContainer">
+                <div class="labelForRequestDataCustomContainer inline" id="labelForRequestDataCustomContainer">
+                    <label for="">Parameter 1</label>
+                </div>
+
+                <div class="requestDataCustomInputContainer align ml-auto flex" id="requestDataCustomInputContainer-1">
+                    <div class="requestDataCustomInputKeyContainer inline-flex" id="requestDataCustomInputKeyContainer-1">
+                        <div class="requestDataKeyInputContainer" id="requestDataKeyInputContainer-1">
+                            <input id="requestDataKeyInput-1" class="requestDataKeyInput padx-2 pady-2 border2px b-radius outline-none" type="text" placeholder="Enter Parameter 1 Key">
+                        </div>
+                    </div>
+
+                    <div class="requestDataCustomInputValueContainer inline-flex mx-2" id="requestDataCustomInputValueContainer-1">
+                        <div class="requestDataValueInputContainer" id="requestDataValueInputContainer-1">
+                            <input id="requestDataValueInput-1" class="requestDataValueInput padx-2 pady-2 border2px b-radius outline-none"type="text" placeholder="Enter Parameter 1 Value">
+                        </div>
+                    </div>
+
+                    <div class="requestDataCustomInputAdderContainer" id="requestDataCustomInputAdderContainer-1">
+                        <button class="requestDataCustomInputAdderBtn pady-1 border2px b-radius pointer" id="requestDataCustomInputAdderBtn-1" onclick="customInputContainerAdder()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sumbitButtonContainer" id="sumbitButtonContainer">
+            <button class="sumbit padx-1 pady-1 border2px b-radius outline-none color-white pointer" id="sumbit" onclick="sumbit()">Sumbit</button>
+        </div>
+
+        <div class="mainResponseContainer my-2 flex" id="mainResponseContainer">
+            <div class="labelForResponseContainer my-1" id="labelForResponseContainer">
+                <label for="responseContainer">Response</label>
+            </div>
+            <div class="dataContainer align ml-auto">
+            <div class="responseContainer padx-1 my-1 border2px b-radius overflow-x-scroll" id="responseContainer">
+                <pre class="responseText mx-1 my-1 break-word" id="responseText">Your Response Text appear here...</pre>
+            </div>
+            <div class="copyBtnContainer my-1" id="copyBtnContainer">
+                <button id="copyBtn" class="copyBtn color-white sumbit block border2px b-radius outline-none pointer" onclick="copyData()">Copy This!</button>
+            </div>
+           
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

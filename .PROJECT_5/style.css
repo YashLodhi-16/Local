@@ -88,3 +88,23 @@
     }
 
 }
+
+@media only screen and (max-width:350px){
+
+    .searchbox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchbox div[id="searchbarbox"]{
+        margin: 2% 0px !important;
+    }
+
+    .searchbar{
+        padding: 1% !important;
+    }
+
+    .searchbtn{
+        padding: 1px 7px;
+    }
+}

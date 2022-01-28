@@ -1,0 +1,247 @@
+:root{
+    --background-color:#343a40;
+}
+
+.navbar{
+    background-color: var(--background-color);
+    width: 100% !important;
+    padding: 8px;
+}
+
+.titlename{
+    font-size: 1.3rem;
+}
+
+.hamburgerbox{
+    display: none;
+}
+
+.unlist{
+    margin-top: 4px;
+}
+
+.searchbox{
+    margin-right: 20px !important;
+}
+
+.searchbtn{
+    padding: 0px 5px;
+}
+
+.contentbox{
+    margin-top: 38px;
+}
+
+.contentTitle{
+    font-size: xx-large;
+}
+
+.url{
+    width: 55vw;
+}
+
+.align{
+    width: 59vw;
+}
+
+.mx-10{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.requestDataJsonInput{
+    width: 93.5%;
+}
+
+.requestDataCustomInputAdderBtn{
+    margin-left: 1px;
+    padding: 3.8px 6px !important;
+}
+
+.sumbit{
+    background-color: deepskyblue;
+}
+
+.sumbit:hover{
+    background-color: darkturquoise;
+}
+
+.responseContainer{
+    background-color: #343a4059;
+}
+
+.responseText{
+    max-height: 400px;
+}
+
+.copyBtn{
+    padding: 1%;
+}
+
+@media only screen and (max-width:720px){
+    .navbar{
+        display: block !important;
+        height: 22px;
+    }
+
+    .title{
+        margin: 0% 0% 2% 0% !important;
+    }
+
+    .hamburgerbox{
+        display: block;
+        top: 0px;
+        right: 20px;
+        font-size: 2rem;
+    }
+
+    .unlist{
+        margin: 2% 0px !important;
+    }
+
+    .searchbox{
+        margin: 2% 0px !important;
+    }
+
+    .searchbox div{
+        margin:0px 1% !important;
+    }
+
+    .contentbox{
+        font-size: small;
+    }
+
+    .urlInputContainer{
+        width: 53vw !important;
+    }
+
+    .url, .requestDataValueInput, .requestDataKeyInput{
+        width: 50vw;
+    }
+
+    .align{
+        width: 53vw;
+    }
+
+    .requestDataCustomInputContainer{
+        flex-direction: column;
+    }
+
+    .requestDataCustomInputValueContainer{
+        margin: 2% 0px !important;
+    }
+
+    .requestDataCustomInputValueContainer{
+        margin: 2% 0px !important;
+    }
+}
+
+@media only screen and (max-width:450px){
+
+    .labelForRequestDataJsonContainer{
+        width: min-content;
+    }
+}
+
+@media only screen and (max-width:350px){
+
+    .searchbox{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .labelForRequestTypeRadioContainer{
+        width: min-content;
+    }
+
+    .labelForContentTypeRadioContainer{
+        width: min-content;
+    }
+
+    .align{
+        width: 49vw;
+    }
+
+    .pady-1{
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+    .padx-1{
+        padding-top:2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .mx-2{
+        margin-right: 4% !important;
+        margin-left: 4% !important;
+    }
+
+    .my-2{
+        margin-bottom: 4% !important;
+        margin-top: 4% !important;
+    }
+
+    .padx-2{
+        padding-right: 4% !important;
+        padding-left: 4% !important;
+    }
+    .pady-2{
+        padding-bottom: 4% !important;
+        padding-top: 4% !important;
+    }
+
+    .urlInputContainer{
+        width: 49vw !important;
+    }
+
+    .url{
+        width: 46vw !important;
+    }
+
+    .requestDataCustomInputValueContainer{
+        margin: 4% 0px !important;
+    }
+
+    .labelForRequestDataCustomContainer{
+        width: min-content;
+    }
+
+    .requestDataKeyInput{
+        width: 46vw !important;
+    }
+    .requestDataValueInput{
+        width: 46vw !important;
+    }
+
+    .mainResponseContainer{
+        flex-direction: column;
+    }
+
+    .dataContainer{
+        margin:0px !important;
+        width: auto;
+    }
+
+    .searchbox div[id="searchbarbox"]{
+        margin: 2% 0px !important;
+    }
+
+    .searchbar{
+        padding: 1% !important;
+    }
+
+    .searchbox div[id="searchbtnbox"]{
+        margin-top: -2px !important;
+    }
+
+    .searchbtn{
+        padding: 1px 7px;
+    }
+
+}
+
+@media only screen and (max-width:245px){
+    .contentTitle{
+        font-size: x-large;
+    }
+}
