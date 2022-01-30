@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(lightpink,aquamarine)
+}
+
+.error{
+    top: 0px;
+    width: 60%;
+}
+
+.calculatorContainer{
+    width: 60%;
+    height: auto;
+    background: white;
+}
+
+.input{
+    width: 90%;
+    background: linear-gradient(to right bottom, lightgray, tomato);
+}
+
+.btn{
+    margin-right: 2%;
+    background: linear-gradient(to right bottom, white,lightgreen);
+}
+
+th{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 25%;
+    padding: 1%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: linear-gradient(to right bottom,blueviolet,aqua);
+}
+
+td{
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1%;
+    cursor: pointer;
+    background: linear-gradient(to right bottom,blueviolet,aqua);
+}

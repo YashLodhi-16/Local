@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="../Web_Development/IMG/favicon.png" type="image/x-icon">
+</head>
+<body class="height-100vh width-100 center-center flex-column">
+    <span class="error padx-2 pady-2 border2px b-radius absolute red color-white center shadow-black-1px none" id="error">Some Error Occured.</span>
+    <div class="calculatorContainer border2px b-radius" id="calculatorContainer">
+        <div class="inputContainer center-center" id="inputContainer">
+            <input type="text" id="input" class="input border2px b-radius padx-2 pady-2 my-2 mx-2 fontserif outline-none" placeholder="Please Do Some Calculations." readonly="true">
+            <button id="btn" class="btn padx-2 pady-2 border2px b-radius pointer outline-none">=</button>
+        </div>
+
+        <div class="tableContainer my-2 mx-2" id="tableContainer">
+            <table class="table width-100" id="table">
+                <thead>
+                   <tr>
+                       <th class="inputText">+</th>
+                       <th class="inputText">-</th>
+                       <th class="inputText">*</th>
+                       <th class="inputText">/</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="inputText">(</td>
+                        <td class="inputText">)</td>
+                        <td class="inputText">.</td>
+                        <td class="inputText">%</td>
+                    </tr>
+                    <tr>
+                        <td class="inputText">7</td>
+                        <td class="inputText">8</td>
+                        <td class="inputText">9</td>
+                        <td class="inputText">C</td>
+                    </tr>
+                    <tr>
+                        <td class="inputText">4</td>
+                        <td class="inputText">5</td>
+                        <td class="inputText">6</td>
+                        <td class="inputText">&#8592;</td>
+                    </tr>
+                    <tr>
+                        <td class="inputText">1</td>
+                        <td class="inputText">2</td>
+                        <td class="inputText">3</td>
+                        <td class="inputText">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

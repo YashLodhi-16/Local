@@ -75,8 +75,9 @@ console.log('YASH LODHI');
 
 // console.log(first, second);
 
-var colors = ['violet', 'indigo', 'blue', 'green'];
+// var colors = ['violet', 'indigo', 'blue', 'green'];
 
-var [a,b, ...c] = colors;
+// var [a,b, ...c] = colors;
 
-console.log(a,b,c);
+// console.log(a,b,c);
+
