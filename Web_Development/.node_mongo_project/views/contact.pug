@@ -1,0 +1,18 @@
+//- this file uses layout.pug as template file
+extends layout.pug
+block content
+    //- fill the content block
+    link(rel="stylesheet", href="../static/css/styleForContact.css")
+    div#posterContainer
+        form.formContainer.py-2#formContainer(method="post")
+            h1.contactH1.center#contactH1 Contact Us
+            input.nameInput.block.border2px.b-radius.px-2.py-2.my-2.outline-none#nameInput(name="name", type="text", placeholder="Enter your name")
+            input.emailInput.block.border2px.b-radius.px-2.py-2.my-2.outline-none#emailInput(name="email", type="text", placeholder="Enter your email")
+            input.phoneInput.block.border2px.b-radius.px-2.py-2.my-2.outline-none#phoneInput(name="phone", type="text", placeholder="Enter your phone")
+            input.addressInput.block.border2px.b-radius.px-2.py-2.my-2.outline-none#addressInput(name="address", type="text", placeholder="Enter your address")
+            input.concernInput.block.border2px.b-radius.px-2.py-2.my-2.outline-none#concernInput(name="concern", type="text", placeholder="Enter your concern")
+            div.btnContainer#btnContainer.flex
+                button.btn.b-radius.px-2.py-2.pointer.outline-none#btn Sumbit
+                button.clear.b-radius.px-2.py-2.pointer.outline-none#clear Clear
+    script(src="../static/js/scriptForHome.js")
+    script(src="../static/js/scriptForContact.js")

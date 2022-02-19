@@ -1,0 +1,36 @@
+//- this file uses layout.pug as template file
+extends layout.pug
+block content
+    //- fill the content block
+    div.posterContainer#posterContainer.flex.justify-center.align-center.flex-column
+        h1.heading#heading.color-white.text-shadow-1px.center.my-1 Welcome to Yash Dance Academy
+        h2.heading2#heading2.color-white.text-shadow-1px.center.my-1 Eat Sleep Dance Repeat
+    div.cardContainer#cardContainer
+        div.heading3Container#heading3Container.flex.justify-center.align-center.py-1
+            h3.heading3#heading3.color-white.text-shadow-1px Our Mission
+        div.cards#cards.flex.justify-center.align-center
+            div.card#card1.border2px.b-radius.py-1.mx-2.my-1
+                p.center.bold Dance Perfection
+                div.image.flex.align-center.px-1.py-1
+                    img.card-img.mx-2(src="../static/card1.jpeg", alt="card1")
+                    p.mx-4 This is the best dance academy of the universe.
+
+            div.card#card2.border2px.b-radius.py-1.mx-2.my-1
+                p.center.bold Dance the way you like
+                div.image.flex.align-center.px-1.py-1
+                    img.card-img.mx-2(src="../static/card2.jpeg", alt="card1")
+                    p.mx-4 dance the way like you, in your style, with your rules.
+
+            div.card#card3.border2px.b-radius.py-1.mx-2.my-1
+                p.center.bold Expert Teaching
+                div.image.flex.align-center.px-1.py-1
+                    img.card-img.mx-2(src="../static/card3.svg", alt="card1")
+                    p.mx-4 we provide teaching with best certified experts.
+    div.sponsorsContainer#sponsorsContainer.flex.flex-column.py-2
+        h4.heading4#heading4.center Our Sponsors
+        div.sponsorsImgContainer#sponsorsImgContainer.flex.justify-center.align-center.flex-wrap
+            img#sponsorsImg1.sponsorsImg.mx-2.my-2.border2px.b-radius(src="../static/amazon.jpg" alt="amazon")
+            img#sponsorsImg2.sponsorsImg.mx-2.my-2.border2px.b-radius(src="../static/google.jpg" alt="google")
+            img#sponsorsImg3.sponsorsImg.mx-2.my-2.border2px.b-radius(src="../static/instagram.jpg" alt="instagram")
+            img#sponsorsImg4.sponsorsImg.mx-2.my-2.border2px.b-radius(src="../static/jaguar.jpg" alt="jaguar")
+    script(src="../static/js/scriptForHome.js")

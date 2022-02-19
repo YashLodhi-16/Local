@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+</head>
+<body>
+    <!-- navigating bar related stuff -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </nav>
+    <h1 id="heading">#{content}</h1>
+
+    <!-- form related stuff -->
+    <form id="form" action="/" method="post">
+        <input name="name" id="name" type="text" placeholder="Enter your name">
+        <input name="age" id="age" type="text" placeholder="Enter your age">
+        <input name="gender" id="gender" type="text" placeholder="Enter your gender">
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+        <textarea id="about" name="about" placeholder="Enter your about"></textarea>
+        <button id="sumbit">Sumbit</button>
+    </form>
+</body>
+</html>

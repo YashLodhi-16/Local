@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: lightblue;
+}
+
+#navbar{
+    background-color: black;
+    padding: 2%;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 0px 2%;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#heading{
+    font-size: x-large;
+    text-align: center;
+    padding: 3%;
+}
+
+#form{
+    padding: 2% 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 2%;
+    border: 2px solid black;
+    margin: 2% 0px;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea{
+    padding: 2%;
+    border: 2px solid black;
+    margin: 2% 0px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#sumbit{
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+    width: -moz-fit-content;
+    cursor: pointer;
+    outline: none;
+}

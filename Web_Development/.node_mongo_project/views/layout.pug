@@ -1,0 +1,41 @@
+//- this is a template file
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge") 
+        link(rel="shortcut icon", href="../static/favicon.png", type="image/x-icon")
+        block title
+            //- default title
+            title Yash Dance Academy
+        block style
+            //- default css file
+            link(rel="stylesheet", href="../static/css/style.css")
+    body
+        //- if someone does give anything argument to nav block so it will displays the default value and if gives anything so it will render
+        //- same for other blocks
+        block nav
+            //- default navbar
+            nav#navbar.nav.flex.py-1.overflow-none
+                div.logoContainer.inline-flex.justify-center.align-center.mx-2
+                    img.logo(src='./static/logo.png' alt='logo')
+                    |YDA
+                    span.hamburger#hamburger.none.pointer ☰
+                ul.ulist#ulist.flex.justify-center.align-center
+                    li.list-none.mx-2.li.effect #[a.ruby.text-none(href='/') Home]
+                    li.list-none.mx-2.li.effect #[a.ruby.text-none(href='about.html') About]
+                    li.list-none.mx-2.li.effect #[a.ruby.text-none(href='services.html') Services]
+                    li.list-none.mx-2.li.effect #[a.ruby.text-none(href='classInfo.html') Class Info]
+                    li.list-none.mx-2.li.effect #[a.ruby.text-none(href='contact') Contact Us]
+        block content
+            //- default content
+            p Please Add Some Content. 
+        block foot
+            //- default footer
+            footer.footer#footer.py-2.color-white
+                p.center CopyRight &#169; 2022 YashDanaceAcademy.com | All rights reserved
+
+        block script
+            //- default js file
+            script(src="../static/js/script.js")
