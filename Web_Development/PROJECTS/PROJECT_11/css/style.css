@@ -1,0 +1,46 @@
+body{
+    background: url('../Img/index.jpg') no-repeat center center/cover;
+}
+
+.noNameError, .sameNameError{
+    padding: 5px;
+}
+
+.mainHeading{
+    text-shadow: 1px 1.5px black;
+}
+
+.searchCity::placeholder{
+    color: white;
+    opacity: 0.8;
+}
+
+.dates:first-child{
+    width: 3%;
+}
+
+.card{
+    text-shadow: 3px 3px 7px wheat;
+}
+
+.searchBtn:hover{
+    color: black;
+    background-color: white;
+}
+
+.dates{
+    width: min-content;
+    word-break: break-all;
+}
+
+@media only screen and (max-width:320px){
+
+    .mainHeading{
+        font-size: 1.5rem;
+    }
+
+    .card{
+        font-size: 0.8rem;
+    }
+
+}
