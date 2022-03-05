@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
+    <title>Tree Meditation</title>
+</head>
+
+<body
+    class="attachment-fixed absolute width-100 height-100 left-0 top-0 z-index--1 background-cover background-center background-norepeat center-center">
+
+    <div class="mainContainer color-white width-100" id="mainContainer">
+        <div class="setTimerContainer" id="setTimerContainer">
+            <div class="timeContainer center-center p-2" id="timeContainer">
+                <div class="hoursContainer mx-2" id="hoursContainer">
+                    <span class="hours padding-5px lightgray b-radius" id="hours">H:</span>
+                    <select id="hoursSelection" class="hoursSelection border1px-black b-radius padding-5px"></select>
+                </div>
+
+                <div class="minutesContainer mx-2" id="minutesContainer">
+                    <span class="minutes padding-5px lightgray b-radius" id="minutes">M:</span>
+                    <select id="minutesSelection" class="minutesSelection border1px-black b-radius padding-5px"></select>
+                </div>
+
+                <div class="secondsContainer mx-2" id="secondsContainer">
+                    <span class="seconds padding-5px lightgray b-radius" id="seconds">S:</span>
+                    <select id="secondsSelection" class="secondsSelection border1px-black b-radius padding-5px"></select>
+                </div>
+            </div>
+            
+            <div class="setMusicContainer p-2 center-center" id="setMusicContainer">
+                <span class="setMusic b-radius lightgray padding-5px mx-1" id="setMusic">Music:</span>
+                <select name="" id="musicSelection" class="musicSelection border1px-black b-radius padding-5px"></select>
+            </div>
+
+            <div class="setTimerButtonContainer p-2 center-center" id="setTimerButtonContainer">
+                <button class="setTimerButton btnHoverStyle mx-1 border1px-black b-radius pointer color-inherit bg-white color-black"
+                    id="setTimerButton">Set Timer</button>
+                <button class="removeTimerButton btnHoverStyle mx-1 border1px-black b-radius pointer color-inherit bg-white color-black"
+                    id="removeTimerButton">Remove Timer</button>
+            </div>
+        </div>
+
+
+        <div class="remainedTimerContainer center-center p-1 fontrem-2" id="remainedTimerContainer"></div>
+    </div>
+
+</body>
+<script src="../js/script.js"></script>
+
+</html>

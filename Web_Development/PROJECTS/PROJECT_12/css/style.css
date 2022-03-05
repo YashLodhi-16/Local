@@ -1,0 +1,22 @@
+.btnHoverStyle:hover{
+    background-color: lightgray;
+    border-color: white !important;
+}
+
+.padding-5px{ padding: 15px; }
+
+.setTimerButtonContainer button { padding: 15px; }
+
+@media only screen and (max-width: 720px){
+    .padding-5px{ padding: 5px; }
+
+    .setTimerButtonContainer button { padding: 5px; }
+}
+
+@media only screen and (max-width: 350px){
+    .timeContainer, .setMusicContainer, .setTimerButtonContainer{ flex-direction: column; }
+
+    .timeContainer div, .setMusicContainer *, .setTimerButtonContainer button{ margin: 2% 0px; }
+
+    .musicSelection{ width: 90%; }
+}
