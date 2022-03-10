@@ -1,0 +1,57 @@
+.appImg{
+    width: 35px;
+}
+
+.chatMessageContainer{
+    height: 60vh;
+}
+
+.leftChatMessage{
+    background-color: #bc97ff;
+}
+
+.rightChatMessage{
+    background-color: #a9c8e2;
+}
+
+.writeMessage{
+    width: 90%;
+}
+
+.getName{
+    width: 100%;
+    border: 1px solid black;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    padding: 10% 0px;
+    overflow: auto;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.modal-content{
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: #fff;
+}
+
+.sumbitName:hover, .sumbitName:focus{
+    color: white !important;
+    background-color: lightgreen;
+}
+
+.sendMessage:hover, .sendMessage:focus {
+    color: white;
+    background-color: salmon;
+}

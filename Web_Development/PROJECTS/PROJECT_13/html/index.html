@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <title>My Chat</title>
+</head>
+
+<body class="center-center height-100vh">
+	
+  <div class="modal" id="modal">
+		<div class="modal-content flex width-75" id="modal-content">
+			<input class="getName outline-none" id="getName" type="text" placeholder="Please enter your name">
+			<button class="sumbitName block border1px-green b-radius p-1 ml-1 color-green bg-white pointer outline-none" id="sumbitName">Sumbit</button>
+		</div>
+	</div>
+
+  <main class="mainContainer width-75 m-auto box-shadow-1px-5px none" id="mainContainer">
+    <div class="userContainer flex justify-between p-1 mr-1" id="userContainer">
+        <div class="appImgContainer" id="appImgContainer">
+            <img class="appImg" id="appImg" src="../img/favicon.jpeg" alt="app icon">
+        </div>
+        
+        <div class="userNameContainer center-center" id="userNameContainer">
+            <span class="userName" id="userName"></span>
+        </div>
+    </div>
+
+    <div class="chatMessageContainer pt-1 overflow-y-scroll scroll-behaviour-smooth border-x-1px-black" id="chatMessageContainer"></div>
+
+    <div class="sendMessageContainer p-1 flex" id="sendMessageContainer">
+        <input type="text" class="writeMessage b-radius border1px-black p-1 outline-none mr-1" id="writeMessage" placeholder="Write a message!">
+        <button class="sendMessage border1px-salmon color-salmon background-transparent b-radius p-1 outline-none ml-1 pointer" id="sendMessage">
+            Send
+        </button>
+    </div>
+  </main>
+
+</body>
+<script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+<script defer src="../js/script.js"></script>
+
+</html>
