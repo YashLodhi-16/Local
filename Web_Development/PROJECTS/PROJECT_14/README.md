@@ -41,5 +41,5 @@
 
 I will back soon with react.
 
-- > if you want any **new features** in this web app, just contact me on the below **email**.
+- > if you want any **new feature** in this web app, just contact me on **email** below.
 - > if you found any bug please report it on github or email me on this **"yashlodhi2006@gmail.com"**.
