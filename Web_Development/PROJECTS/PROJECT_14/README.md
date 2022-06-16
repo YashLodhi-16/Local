@@ -1,7 +1,5 @@
 # Super Player
 
----
-
 - It is a simple online **video streaming app** with _neat and clean_ ui.
 - It provides you many features like :-
   - SignIn
@@ -14,8 +12,6 @@
 - It is responsive you can watch your favourite videos at any devices.
 
 ## Sample Images
-
----
 
 ![Sample home page image](./readmeImg/homeScreen.png)
 
